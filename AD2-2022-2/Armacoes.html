@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A Perder de Vista</title>
+	<base target="_blank" />
+	<link rel="stylesheet" type="text/css" href="Estilos/apdv.css" />
+	<link rel="stylesheet" type="text/css" href="Estilos/armacoes.css" />
+	<script src="Javascript/apdv.js"></script>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+
+	<header>
+		<address class="ender">
+			Avenida Parcelada, 123<br/>
+			Tel: (21) 91234-5678<br/>
+			<a href="mailto:contato@apdv.com.br">contato@apdv.com.br</a>
+		</address>
+		<img class="imgLogo" src="Imagens/APDVOtica_LogoTopo.png"/>
+	</header>
+	
+	<nav>
+		<ul class="menu">
+			<li class="botao"><a href="APDVOtica.html">INICIAL</a></li>
+			<li class="botao"><a href="Lentes.html">LENTES</a></li>
+			<li class="botao"><a href="Armacoes.html">ARMAÇÕES</a></li>
+			<li class="botao"><a href="Compras.html">COMPRAS</a></li>
+		</menu>
+	</nav>
+	
+	<section>
+
+    <h3>Armações para Óculos de Grau</h3>
+    <h4>Todas em 10x sem juros no cartão</h4>
+
+		<table class="tabOculos">
+
+			<thead>
+				
+				<tr>
+					<th colspan="3" class="titulo">Armações</th>
+				</tr>
+
+				<tr>
+					<th class="linTH">Gênero</th>
+					<th class="linTH">Marca</th>
+					<th class="linTH">Descrição</th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<th rowspan="3" class="colTH">Masculino</th>
+					<td class="colMenu" onclick="mostra(0)">Oakley Wingfold</td>
+					<td rowspan="5" id="celDes">
+						<h3 id="titDes"></h3>
+						<img id="imgDes" src="Imagens/vazio.jpg">
+						<p id="prcDes">
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="colMenu" onclick="mostra(1)">Persol</td>
+				</tr>
+
+				<tr>
+					<td class="colMenu" onclick="mostra(2)">Ray-ban Round</td>
+				</tr>
+
+				<tr>
+					<th rowspan="2" class="colTH">Feminino</th>
+					<td class="colMenu" onclick="mostra(3)">Kipling</td>
+				</tr>
+
+				<tr>
+					<td class="colMenu" onclick="mostra(4)">Michael Kors</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+    
+	</section>
+	
+</body>
+
+</html>

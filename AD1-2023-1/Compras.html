@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A Perder de Vista</title>
+	<base target="_blank" />
+	<link rel="stylesheet" type="text/css" href="Estilos/apdv.css" />
+	<link rel="stylesheet" type="text/css" href="Estilos/compras.css" />
+	<meta charset="utf-8" />
+</head>
+
+<body>
+
+	<header>
+		<address class="ender">
+			Avenida Parcelada, 123<br/>
+			Tel: (21) 91234-5678<br/>
+			<a href="mailto:contato@apdv.com.br">contato@apdv.com.br</a>
+		</address>
+		<img class="imgLogo" src="Imagens/APDVOtica_LogoTopo.png"/>
+	</header>
+	
+	<nav>
+		<ul class="menu">
+			<li class="botao"><a href="APDVOtica.html">INICIAL</a></li>
+			<li class="botao"><a href="Lentes.html">LENTES</a></li>
+			<li class="botao"><a href="Armacoes.html">ARMAÇÕES</a></li>
+			<li class="botao"><a href="Compras.html">COMPRAS</a></li>
+		</menu>
+	</nav>
+	
+	<section>
+
+    <h3>Compras</h3>
+    <h4>Todas em 10x sem juros no cartão</h4>
+
+		<form method="post" class="geral">
+
+			<fieldset class="">
+				<legend>Identificação</legend>
+
+				<div class="divLinha">
+
+					<label for="idNome" class="colPri">Nome: </label>
+					<input type="text" class="inpGrande" id="idNome"/>
+
+				</div>
+
+				<div class="divLinha">
+
+					<label for="idEmail" class="colPri">Email: </label>
+					<input type="email" class="inpGrande" id="idEmail"/>
+
+				</div>
+
+				<div class="divLinha">
+
+					<label for="idEnder" class="colPri">Endereço: </label>
+
+					<textarea class="inpEnder" id="idEnder"></textarea>
+
+					<fieldset class="fsDir">
+						<legend>Gênero</legend>
+						<input type="radio" name="RadForma" id="masc" checked />
+						<label for="masc">Mas</label>
+						<input type="radio" name="RadForma" id="fem" />
+						<label for="fem">Fem</label>
+						<input type="radio" name="RadForma" id="outro" />
+						<label for="outro">Outro</label>
+					</fieldset>
+
+				</div>
+
+				<div class="divLinha">
+
+					<label for="idTel" class="colPri">Telefone: </label>
+					<input type="text" class="inpTelef" id="idTel"/>			
+
+					<fieldset class="fsDir">
+						<legend>Nascimento</legend>
+						<input type="number" min="1" max="31" class="numDD"/> / 
+						<input type="number" min="1" max="12" class="numDD"/> / 
+						<input type="number" min="1900" max="2004" value="1980" class="numQD"/>
+					</fieldset>
+
+					<br/><br/>
+
+					<label for="idCel" class="colPri">Celular: </label>
+					<input type="text" class="inpTelef" id="idCel"/>
+				</div>
+
+			</fieldset>
+
+			<br>
+		
+			<fieldset class="">
+				<legend>Pagamento</legend>
+
+				<fieldset class="fsEsq">
+					<legend>Cartão</legend>
+					<fieldset class="fsEsq">
+						<legend>Bandeira</legend>
+						<input type="radio" name="RadForma" id="visa" />
+						<label for="visa">Visa</label>
+						<input type="radio" name="RadForma" id="mast" />
+						<label for="mast"> Master</label>
+						<input type="radio" name="RadForma" id="elo" />
+						<label for="elo">Elo</label>
+					</fieldset>
+
+					<br/><br/><br/><br/>
+
+					<label class="colPri" for="mesVal" class="">Validade: </label>
+					<input type="number" min="1" max="12" id="mesVal" class="numDD" name="TxtValMes" value="1"/> / 
+					<input type="number" min="2022" max="2030" class="numQD" name="TxtValAno" value="2022"/>
+
+					<br/><br/>
+
+					<label class="colPri" for="numCar" class="">Numero: </label>
+					<input type="text" class="inpNCC" id="numCar" size="20"/>
+
+					<br/><br/>
+
+					<label class="colPri" for="nParc" class="">Parcelas: </label>
+					<select>
+						<option checked>à vista</option>
+						<option>2x</option>
+						<option>3x</option>
+						<option>4x</option>
+						<option>5x</option>
+						<option>6x</option>
+						<option>7x</option>
+						<option>8x</option>
+						<option>9x</option>
+						<option>10x</option>
+					</select>
+				</fieldset>
+
+				<textarea class="listaCompras"></textarea>
+				
+				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+				<div>
+				<label class="colPriPag">Valor R$
+				<input type="text" class="inpMedio"></label>
+				</div>
+
+			</fieldset>
+		
+			<div class="botoes">
+				<input type="submit" value="Enviar" name="BtnEnviar">
+				<input type="reset" value="Limpar" name="BtnLimpar">
+			</div>
+
+		</form>
+    
+	</section>
+	
+</body>
+
+</html>

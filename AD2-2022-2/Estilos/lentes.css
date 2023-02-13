@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Estilo Section Lentes */
+
+.listaLentes {
+	color: #3040BB;
+	background-color: #EEDD99;
+	padding: 10px 10px 10px 50px;
+	margin: 30px 10px 10px 10px;
+	border: 2px solid #000055;
+	line-height: 200%;
+	list-style-type: upper-roman;
+}
+
+.listaLentes ul{
+	color: #3040BB;
+	line-height: 200%;
+	list-style-type: none;
+}
+
+.listaLentes .preco {
+	color: #EE0000;
+}
+
+.janInfo{
+	text-align: center;
+}
+
+.janInfoDetalhe{
+	text-align: left;
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.listaLentes a:link, .listaLentes a:visited{
+	color: #550099;
+}
