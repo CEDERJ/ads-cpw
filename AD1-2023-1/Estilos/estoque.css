@@ -1,50 +1,34 @@
 @charset "UTF-8";
 
-/* Estilo Section Armações */
+/* Estilo Section Estoque */
 
-.tabOculos {
-	width: 96%;
+.tabInfo{
 	border-collapse: collapse;
-	background-color: #EEDD99;
+	margin-top: 6px;
+	background-color: #FFFFFF;
 	color: #000066;
-  width: 96%;
-  margin: auto;
-	font-family: 'Arial', 'Ubuntu';
+	font-size: 15px;
+	font-family: 'Karla','Verdana','Ubuntu';
 }
 
-.tabOculos td, .tabOculos th {
-	border: 3px solid #000055;
+.tabInfo td, .tabInfo th{
+	border: 3px solid #226699;
 	padding: 6px 12px 6px 12px;
 }
 
-.tabOculos .titulo {
-	color: #FFFF22;
-	background-color: #447799;
-	font-size: 24px;
-	text-align: center;
-	font-weight: bold;
-}
-
-.tabOculos .linTH {
+.tabInfo .linTH{
 	color: #FFFFFF;
-	text-align: center;
+	background-color: #112288;
 	vertical-align: middle;
-	background-color: #777777;
+	text-align: center;
 }
 
-.tabOculos .colTH {
+.tabInfo .colTH{
+	color: #FFFFFF;
+	background-color: #0066DD;
 	text-align: left;
-	background-color: #999999;
-	color: #FFFFFF;
 }
 
-.tabOculos .imgCel {
-	text-align: center;
-	background-color:#FFFFFF;
-}
-
-.tabOculos .preco {
-	color: #EE0000;
-	font-weight: bold;
-	vertical-align: middle;
+.tabInfo .preco{
+	color: #CC0000;
 }

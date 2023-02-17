@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* IDENTIFICADORES DA PÁGINA DE CADASTRO */
+
+#linhaEnder{
+	height: 50px;
+}
+
+#inpEnder{
+	width: 394px;
+	height: 80px;
+}
