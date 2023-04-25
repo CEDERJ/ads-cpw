@@ -1,19 +1,9 @@
-/*var tabLentes = [
-  ['Softlens','Bauch & Lonb', 30, 100, 'BauchELomb_30D_200'],
-  ['Bioninfinity','Coopervision', 30, 100, 'Bioinfinity_30D_200'],
-  ['Acuvue Oasys','Johnson & Johnson', 15, 220, 'Acuvue_15D_200'],
-  ['Acuvue 2','Johnson & Johnson', 15, 170, 'Acuvue2_15D_200']
+var tabModelos = [
+  ['SpringerSplit12000', 1680],
+  ['SpringerParede12000', 1890],
+  ['ConsulParede7500', 1300],
+  ['ElginPortatil9000', 1900]
 ];
-
-var tabArmacoes = [
-  ['Oakley Wingfold', 'M_Oakley_100', 'Masculino', 855],
-  ['Persol', 'M_Persol_100', 'Masculino', 1377],
-  ['Ray-ban Round', 'M_Ray-ban_100', 'Masculino', 666],
-  ['Kipling', 'F_Kipling_100', 'Feminino', 423],
-  ['Michael Kors', 'F_MichaelKors_100', 'Feminino', 684]
-];*/
-
-//var valor = 0;
 
 /*
 * QUESTÃO 1
@@ -61,16 +51,13 @@ function abreJanCapac(){
 * Função chamada para exibir as
 * imagens e texto na tabela
 */
-/*
+
 function mostra(cod){
 
-  document.getElementById("titDes").innerHTML = tabArmacoes[cod][0];
-  document.getElementById("imgDes").src = `Imagens/${tabArmacoes[cod][1]}.jpg`;
-  document.getElementById("prcDes").innerHTML =
-      `${tabArmacoes[cod][2]}<br/><br/>
-      Preço: R$ <span class="preco">${tabArmacoes[cod][3]},00</span>`;
+  document.getElementById("imgDes").src = `Imagens/${tabModelos[cod][0]}.jpg`;
+  document.getElementById("prcDes").innerHTML = `R$ <span class="preco">${tabModelos[cod][1]},00</span>`;
   
-}*/
+}
 
 /*
 * QUESTÃO 4

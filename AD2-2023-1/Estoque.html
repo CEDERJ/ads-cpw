@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="Estilos/refrig.css" />
 	<link rel="stylesheet" type="text/css" href="Estilos/estoque.css" />
 	<meta charset="utf-8" />
+	<script src="resfriamento.js"></script>
 </head>
 
 <body>
@@ -37,14 +38,8 @@
 				<thead>
 					
 					<tr>
-						<th colspan="5" class="linTH">Estoque</th>
-					</tr>
-	
-					<tr>
-						<th class="linTH">Marca</th>
+						<th class="linTH">Modelo</th>
 						<th class="linTH">Foto</th>
-						<th class="linTH">Capacidade</th>
-						<th class="linTH">Tipo</th>
 						<th class="linTH">Preço</th>
 					</tr>
 	
@@ -53,42 +48,23 @@
 				<tbody>
 	
 					<tr>
-						<th rowspan="2" class="colTH">Springer</th>
-						<td>
-							<img src="Imagens/SpringerSplit12000.jpg">
+						<th class="colTH" onclick="mostra(0)">Springer Split 12000</td>
+						<td rowspan="4" class="foto">
+							<img id="imgDes" src="Imagens/vazio.jpg">
 						</td>
-						<td>12000</td>
-						<td>Split</td>
-						<td class="preco">R$ 1.680,00</td>
+						<td rowspan="4" id="prcDes" class="preco">R$ </td>
 					</tr>
 	
 					<tr>
-						<td>
-							<img src="Imagens/SpringerParede12000.jpg">
-						</td>
-						<td>12000</td>
-						<td>Parede</td>
-						<td class="preco">R$ 1.890,00</td>
+						<th class="colTH" onclick="mostra(1)">Springer de Parede Midea 12000</td>
 					</tr>
 	
 					<tr>
-						<th class="colTH">Consul</th>
-						<td>
-							<img src="Imagens/ConsulParede7500.jpg">
-						</td>
-						<td>7500</td>
-						<td>Parede</td>
-						<td class="preco">R$ 1.300,00</td>
+						<th class="colTH" onclick="mostra(2)">Consul de Parede 7500</td>
 					</tr>
 	
 					<tr>
-						<th class="colTH">Elgin</th>
-						<td>
-							<img src="Imagens/ElginPortatil9000.jpg">
-						</td>
-						<td>9000</td>
-						<td>Portátil</td>
-						<td class="preco">R$ 1.900,00</td>
+						<th class="colTH" onclick="mostra(3)">Elgin Portátil Eco Cube 9000</td>
 					</tr>
 	
 				</tbody>
