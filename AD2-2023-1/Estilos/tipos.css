@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Estilo Section Tipos */
+
+.listaTipos {
+	color: #FFFFFF;
+	padding: 10px 10px 10px 50px;
+	line-height: 180%;
+}
+
+.tabInfo{
+	border-collapse: collapse;
+	margin-top: 6px;
+	background-color: #FFFFFF;
+	color: #000066;
+	font-size: 15px;
+	font-family: 'Karla','Verdana','Ubuntu';
+}
+
+.listaTipos ul{
+	color: #99FFFF;
+	list-style-type: disc;
+}
+
+.tabInfo td, .tabInfo th{
+	border: 3px solid #226699;
+	padding: 6px 12px 6px 12px;
+}
+
+.tabInfo .linTH{
+	color: #FFFFFF;
+	background-color: #112288;
+	vertical-align: middle;
+	text-align: center;
+}

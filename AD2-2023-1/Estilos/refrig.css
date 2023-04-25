@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Stoke&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+/* Estilo Geral */
+body {
+	color: #99EEEE;
+	font-size: 16px;
+	background-color: #4488AA;
+	font-family: 'Stoke', 'Lucida Bright', 'Liberation';
+}
+
+a:link { color:#FFFFFF; text-decoration:none; }
+a:visited { color:#99EEEE; text-decoration:none; }
+
+header{
+	display: block;
+	margin-bottom: 1px;
+}
+nav{
+	display: block;
+	width: 20%;
+	float: left;
+}
+section{
+	display: block;
+	width: 70%;
+	float: right;
+}
+
+/* Classes de Estilo Home */
+
+.ender {
+	float: right;
+	text-align: right;
+	font-size: 15px;
+	line-height: 140%;
+	font-family: 'Karla','Verdana','Ubuntu';
+}
+
+.imgLogo {
+	border-bottom: 3px #FFFFFF;
+	padding-bottom: 15px;
+	margin-bottom: 6px;
+}
+
+.apres {
+	text-align: center;
+	font-size: 18px;
+}
+
+nav > ul{
+	color: #FFFFFF;
+	line-height: 230%;
+	margin-top: 40px;
+	list-style-image: url('../Imagens/BrilhoMark.png');
+	font-size: 20px;
+	font-family: 'Karla','Verdana','Ubuntu';
+}

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* Estilo Section Compras */
+
+.FormBox{
+	width: 520px;
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #0066DD;
+	border: 3px solid #000055;
+	font-size: 16px;
+	font-family: 'Karla','Verdana','Ubuntu';
+}
+
+/* Posicionamento de fielsets */
+
+.FSLinhaInteira{
+	color: #FFF;
+	width: 490px;
+	text-align: left;
+}
+
+.fsColEsq{
+	width: 210px;
+	text-align: center;
+	float: left;
+}
+
+.fsColDir{
+	width: 210px;
+	text-align: center;
+	float: right;
+}
+
+/* Posicionamento e tamanho boxes internas */
+
+.LinhaForm{
+	margin: 0px;
+	height: 30px;
+	padding: 6px 3px 0px 3px;
+}
+
+.ColEsq{
+	width: 180px;
+	float: left;
+	display: block;
+}
+
+.ColDir{
+	width: 180px;
+	float: right;
+	display: block;
+}
+
+.LabBox{
+	width: 80px;
+	float: left;
+	display: block;
+}
+
+.botoes{
+	text-align: right;
+	margin: 20px 10px 0px 10px;
+}
+
+/* Tamanho Inputs */
+
+.InpBoxGnd{
+	width: 385px;
+	float: right;
+	display: block;
+}
+
+.InpBoxMed{
+	width: 80px;
+	float: right;
+	display: block;
+}
+
+.numDD{
+	width: 35px;
+}
+
+.numQD{
+	width: 50px;
+}

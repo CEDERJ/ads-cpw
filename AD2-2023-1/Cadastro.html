@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Resfriamento Global</title>
+	<base target="_blank" />
+	<link rel="stylesheet" type="text/css" href="Estilos/refrig.css" />
+  <link rel="stylesheet" type="text/css" href="Estilos/form.css" />
+  <link rel="stylesheet" type="text/css" href="Estilos/cadastro.css" />
+	<meta charset="utf-8" />
+</head>
+
+<body>
+
+	<header>
+		<address class="ender">
+			Av. Novaya Zemlya, 1870<br/>
+			Cel: (21) 98765-4321<br/>
+			<a href="mailto:contato@resfriglob.com.br">contato@resfriglob.com.br</a>
+		</address>
+		<img class="imgLogo" src="Imagens/ResfGlobLogoDeitado.png"/>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="RefriGlobal.html">Apresentação</a></li>
+			<li><a href="Tipos.html">Tipos</a></li>
+			<li><a href="Estoque.html">Estoque</a></li>
+			<li><a href="Cadastro.html">Cadastro</a></li>
+			<li><a href="Compras.html">Compras</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+	
+			<h3>Cadastro</h3>
+
+      <form action="Compras.html" class="FormBox">
+
+        <fieldset class="FSLinhaInteira">
+          <legend>Identificação</legend>
+          <div class="LinhaForm">
+            <label for="cemail" class="LabBox">E-mail:</label>
+            <input type="email" id="cemail" class="InpBoxGnd"/>
+          </div>
+          <div class="LinhaForm">
+            <div class="ColEsq">
+              <label for="csenha" class="LabBox">Senha:</label>
+              <input type="password" id="csenha" class="InpBoxMed"/>
+            </div>
+            <div class="ColDir">
+              <label for="cconfirma" class="LabBox">Confirme:</label>
+              <input type="password" id="cconfirma" class="InpBoxMed"/>
+            </div>
+          </div>
+        </fieldset>
+
+				<fieldset class="FSLinhaInteira">
+          <legend>Dados Pessoais</legend>
+          <div class="LinhaForm">
+            <label for="cnome" class="LabBox">Nome:</label>
+            <input type="text" id="cnome" class="InpBoxGnd"/>
+          </div>
+					<div id="linhaEnder">
+            <label for="inpEnder" class="LabBox">Endereço:</label>
+            <input type="text" id="inpEnder">
+          </div>
+          <div class="LinhaForm">
+            <div class="ColEsq">
+              <label for="ctel" class="LabBox">Telefone:</label>
+              <input type="text" id="ctel" class="InpBoxMed"/>
+            </div>
+            <div class="ColDir">
+              <label for="ccel" class="LabBox">Celular:</label>
+              <input type="text" id="ccel" class="InpBoxMed"/>
+            </div>
+          </div>
+
+					<fieldset class="fsColEsq">
+						<legend>Nascimento</legend>
+						<input type="number" class="numDD" id="cdia" min="1" max="31"/> /
+						<input type="number" class="numDD" id="cmes" min="1" max="21"/> /
+						<input type="number" class="numQD" id="cano" min="1900" max="2005"/>
+					</fieldset>
+
+					<fieldset class="fsColDir">
+						<legend>Sexo:</legend>
+						<input type="radio" id="cmasc" name="sexo">
+						<label for="cmasc">M</label>
+						<input type="radio" id="cfem" name="sexo">
+						<label for="cfem">F</label>
+						<input type="radio" id="coutro" name="sexo" checked>
+						<label for="coutro">Outro</label>
+					</fieldset>
+
+        </fieldset>
+
+				<div class="botoes">
+					<input type="submit" value="Cadastrar"/>
+					<input type="reset" value="Limpar"/>
+				</div>
+
+      </form>
+
+	</section>
+	
+</body>
+
+</html>

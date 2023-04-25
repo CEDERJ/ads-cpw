@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Estilo Section Compras */
+
+#loginCad{
+  width: 260px;
+}
+
+#idEmail{
+  width: 160px;
+}
+
+#senhaCad{
+  width: 180px;
+}
+
+#lisSelProd{
+  width: 370px;
+}
+
+#selProduto{
+  width: 75%;
+}
+
+#btnIncluir{
+  width: 70px;
+}
+
+#boxPedidos{
+  height: 100px;
+}
+
+#lisPedArea{
+  height: 90%;
+  width: 100%;
+}
+
+#fsBandeira{
+  height: 80px;
+  width: 80px;
+  text-align: left;
+}
+
+#numCartao{
+  width: 350px;
+  height: 35px;
+  padding-top: 10px;
+}
+
+#valCartao{
+  width: 230px;
+  height: 35px;
+}
+
+#boxParcel{
+  width: 280px;
+  height: 30px;
+}
