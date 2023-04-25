@@ -106,44 +106,33 @@ function criticaTel(campo,digito) {
 * +
 * Mensagem de erro em caso de lista de pedidos vazia
 */
-/*
+
 function incluirProd(){
-  lista = document.getElementById("selProd")
+  lista = document.getElementById("selProduto");
   
   if(lista.value == '-----'){
-      alert("Nenhum produto selecionado!")
+      alert("Nenhum produto selecionado!");
   }
   else{
     
-      document.getElementById("lisPedArea").innerHTML += lista.value + "\n"
-
-      op = lista.selectedIndex
-
-      if(op >= 1 && op <= 4){
-          parcial = tabLentes[op-1][3]
+      op = lista.selectedIndex;
+      if(op == 1){
+        texto = "Split - " + lista.value;
+      }
+      else if(op == 4){
+        texto = "Portátil - " + lista.value;
       }
       else{
-          parcial = tabArmacoes[op-5][3]
+        texto = "Parede - " + lista.value;
       }
 
-      valor += parcial;
+      document.getElementById("lisPedArea").innerHTML += texto + "\n";
+
+      parcial = parseInt(document.getElementById("valorTotal").value)
+      valor = tabModelos[op-1][1] + parcial;
       
-      document.getElementById("valorTotal").innerHTML = "Valor Total R$ " + valor + ",00\n"
-      
-      parcelarValor()
+      document.getElementById("valorTotal").value = valor;
   }
-}*/
-/*
-function parcelarValor(){
-  parc = document.getElementById("selParc")
-  if(parc.value == "à vista"){
-    parcela = 1
-  }
-  else{
-    parcela = parseFloat(parc.value)
-  }
-  document.getElementById("parcelas").innerHTML =
-            "Em " + parcela + "x de R$ " + Math.ceil(valor/parcela) + ",00\n"
 }
 
 function limpa(){
@@ -151,4 +140,3 @@ function limpa(){
   document.getElementById("valorTotal").innerHTML = ""
   document.getElementById("parcelas").innerHTML = ""
 }
-*/

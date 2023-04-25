@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="Estilos/form.css" />
   <link rel="stylesheet" type="text/css" href="Estilos/compras.css" />
 	<meta charset="utf-8" />
+	<script src="resfriamento.js"></script>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
 						</select>
 					</div>
 					<div id="btnIncluir" class="ColDir">
-						<input type="button" value="Incluir"/>
+						<input type="button" value="Incluir" onclick="incluirProd()"/>
 					</div>
 				</div>
 				<div class="LinhaForm" id="boxPedidos">
@@ -86,7 +87,7 @@
 				</div>
 				<div class="ColDir">
 					<label for="cvalor" class="LabBox">Valor: R$</label>
-					<input type="text" class="InpBoxMed" readonly>
+					<input type="text" class="InpBoxMed" id="valorTotal" value="0" readonly>
 				</div>
 			</fieldset>
 		
@@ -129,7 +130,7 @@
 		
 			<div class="botoes">
 				<input type="submit" value="Confirmar"/>
-				<input type="reset" value="Limpar"/>
+				<input type="reset" value="Limpar" onclick="limpa()"/>
 			</div>
 
 		</form>
