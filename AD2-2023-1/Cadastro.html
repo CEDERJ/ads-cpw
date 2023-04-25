@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="Estilos/form.css" />
   <link rel="stylesheet" type="text/css" href="Estilos/cadastro.css" />
 	<meta charset="utf-8" />
+	<script src="resfriamento.js"></script>
 </head>
 
 <body>
@@ -68,11 +69,11 @@
           <div class="LinhaForm">
             <div class="ColEsq">
               <label for="ctel" class="LabBox">Telefone:</label>
-              <input type="text" id="ctel" class="InpBoxMed"/>
+              <input type="text" id="ctel" class="InpBoxMed" onchange="criticaTel(this,8)"/>
             </div>
             <div class="ColDir">
               <label for="ccel" class="LabBox">Celular:</label>
-              <input type="text" id="ccel" class="InpBoxMed"/>
+              <input type="text" id="ccel" class="InpBoxMed" onchange="criticaTel(this,9)"/>
             </div>
           </div>
 

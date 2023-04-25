@@ -60,6 +60,47 @@ function mostra(cod){
 }
 
 /*
+* QUESTÃO 3
+* Função chamada para crítica do
+* campo Telefone do formulário Cadastro
+*/
+function criticaTel(campo,digito) {
+
+	// String  com o telefone
+	var tel = campo.value;
+	var tipoTel;
+
+	if(digito == 8){ tipoTel = "fixo"; }
+	if(digito == 9){ tipoTel = "celular"; }
+	
+	//Verificando quantidade de digitos
+    if (tel.length < digito) {
+		alert(`Telefone ${tipoTel} tem de ter ${digito} digitos!`);
+		campo.value = "";
+        campo.focus();
+        return false;
+    }
+	
+	// Verificando se todos os caracteres são digitos
+	if ( isNaN(tel) ) {
+		var i, c;
+		for (i = 0; i < digito; i++ ) {
+			c = tel.charAt(i);
+			if ( (c < '0') || (c > '9')) {
+				alert(`Telefone só pode ter dígitos, caracter '${c}' inválido!`);
+			}	
+		}
+		campo.value = "";
+		campo.focus();
+		return false;
+	}
+	
+    return true;
+
+}
+
+
+/*
 * QUESTÃO 4
 * Adicionar na lista e somar total
 * +
