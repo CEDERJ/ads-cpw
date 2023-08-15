@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Espuma Era a Lei</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/capsulas.css">
 </head>
 <body>
     <header>
@@ -23,7 +24,53 @@
         </ul>
     </nav>
     <section>
-        CAPSULAS
+        <table class="tabCap">
+            <thead>
+                <tr><th class="linTH" colspan="5">Cápsulas</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="linTH">Máquina</th>
+                    <th class="linTH">Tipo</th>
+                    <th class="linTH">QTD</th>
+                    <th class="linTH">Preço</th>
+                    <th class="linTH">Imagem</th>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="colTH">Dolce Gusto</th>
+                    <td>Espresso</td>
+                    <td>10</td>
+                    <td class="preco">R$ 18,00</td>
+                    <td class="imgCel"><img src="Imagens/CapDolceGusto_10_Espresso.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Intenso</td>
+                    <td>10</td>
+                    <td class="preco">R$ 19,00</td>
+                    <td class="imgCel"><img src="Imagens/CapDolceGusto_10_Intenso.jpg"></td>
+                </tr>
+                <tr>
+                    <th class="colTH">Três Corações</th>
+                    <td>Forza / Vibrante</td>
+                    <td>30</td>
+                    <td class="preco">R$ 44,00</td>
+                    <td class="imgCel"><img src="Imagens/CapTresCoracoes_30_ForzaVibrante.jpg"></td>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="colTH">Nespresso</th>
+                    <td>Três Cor. Intenso</td>
+                    <td>10</td>
+                    <td class="preco">R$ 20,00</td>
+                    <td class="imgCel"><img src="Imagens/CapTresCoracoesNespreso_10_Intenso.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Lor Forza</td>
+                    <td>10</td>
+                    <td class="preco">R$ 21,00</td>
+                    <td class="imgCel"><img src="Imagens/CapLorNespreso_10_Forza.jpg"></td>
+                </tr>
+            </tbody>
+        </table>            
     </section>
 </body>
 </html>

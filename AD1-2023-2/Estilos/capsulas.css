@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.tabCap{
+  border-collapse: collapse;
+  margin-top: 6px;
+  font-size: 15px;
+  background-color: #EEDDCC;
+  color: #402020;
+  font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.tabCap th{
+  border: 3px solid #888888;
+  padding: 6px 12px 6px 12px;
+}
+
+.tabCap td{
+  border: 3px solid #000066;
+  padding: 6px 12px 6px 12px;
+}
+
+.tabCap .linTH{
+  color: #FFFFFF;
+  background-color: #402020;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tabCap .colTH{
+  color: #FFFFFF;
+  background-color: #804040;
+  text-align: left;
+}
+
+.tabCap .preco{
+  color: #CC0000;
+}
+
+.tabCap .imgCel{
+  background-color: #FFFFFF;
+}
+
+.imgCel img{
+  width: 60px;
+  height: 60px;
+}
