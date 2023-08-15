@@ -24,7 +24,59 @@
         </ul>
     </nav>
     <section>
-        <h3>Pedidos</h3>
+        <form class="FormBox" method="get" action="Cadastro.html">
+            <fieldset class="FSLinhaInteira">
+                <legend>Seleção de Produtos e Lista de Compras</legend>
+                <div class="LinhaForm">
+                    <div class="ColEsqSelProd">
+                        <label for="selMaq" class="LabBoxSel">Máquinas:</label>
+                        <select id="selMar" class="selMaquina">
+                            <option>-----</option>
+                        </select>
+                    </div>
+                    <div class="ColDir">
+                        <label for="qtMaq" class="LabBoxQtd">Qtd:</label>
+                        <input type="text" id="qtMaq" class="InpBoxMed"/>
+                    </div>
+                </div>
+                <div class="LinhaForm">
+                    <div class="ColEsqSelProd">
+                        <label for="selCap" class="LabBoxSel">Cápsulas:</label>
+                        <select id="selCap" class="selCapsula">
+                            <option>-----</option>
+                        </select>
+                    </div>
+                    <div class="ColDir">
+                        <label for="qtCap" class="LabBoxQtd">Qtd:</label>
+                        <input type="text" id="qtCap" class="InpBoxMed"/>
+                    </div>
+                </div>
+                <div class="LinhaForm">
+                    <div class="ColEsqValUnit">
+                        <label class="LabBox" for="valUnit">Valor Unitário: R$</label>
+                        <input type="text" class="InpBoxMedLeft"/>
+                    </div>
+                    <div class="ColDir">
+                        <input type="button" value="Incluir Produtos">
+                    </div>
+                </div>
+                <div class="boxPedidos">
+                    <textarea class="lisPedArea"></textarea>
+                </div>
+                <div class="LinhaForm">
+                    <div class="ColEsqValUnit">
+                        <label class="LabBox" for="valTot">Valor Total: R$</label>
+                        <input type="text" class="InpBoxMedLeft"/>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="botoes">
+                <input type="submit" value="Continuar"/>
+                <input type="reset" value="Limpar"/>
+            </div>
+        
+        </form>
     </section>
 </body>
 </html>
