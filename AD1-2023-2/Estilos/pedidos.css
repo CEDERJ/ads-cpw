@@ -61,7 +61,7 @@
 .numQD{ width: 50px; }
 .inpNCC{ width: 130px; }
 .inpTelef{ width: 90px; }
-.inpEnder{ width: 60px; height: 180px; }
+.inpEnder{ width: 180px; height: 60px; }
 
 .ColEsqSelProd{
   width: 360px;
@@ -115,13 +115,14 @@
 }
 
 .colLabCrd{
-  width: 270px;
-  height: 45px;
+  width: 75px;
+  height: 10px;
   text-align: left;
   float: left;
 }
 
 .colValTot{
+  margin-top: 30px;
   width: 220px;
   text-align: left;
   float: left;
@@ -134,5 +135,5 @@
   margin-top: 8px;
   margin-bottom: 10px;
   margin-left: 10px;
-  float: left;
+  float: right;
 }

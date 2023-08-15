@@ -24,13 +24,79 @@
         </ul>
     </nav>
     <section>
-        <form>
+        <form class="FormBox">
             <fieldset class="FSLinhaInteira">
-                <legend>CADASTRO</legend>
+                <legend>Identificação</legend>
+                <div class="divLinha">
+                    <label for="idNome" class="colPri">Nome:</label>
+                    <input type="text" class="InpBoxGnd"/>
+                </div>
+                <div class="divLinha">
+                    <label for="idMail" class="colPri">E-mail:</label>
+                    <input type="email" class="InpBoxGnd"/>
+                </div>
+                <div class="divLinha">
+                    <fieldset class="FSDir">
+                        <legend>Genero</legend>
+                        <input type="radio" id="mas" name="gen">
+                        <label for="mas">Mas</label>
+                        <input type="radio" id="fem" name="gen">
+                        <label for="mas">Fem</label>
+                        <input type="radio" id="outro" name="gen">
+                        <label for="mas">Outro</label>
+                    </fieldset>
+                    <label for="idEnder" class="colPri">Endereço:</label>
+                    <textarea class="inpEnder"></textarea>
+                </div>
+                <div class="divLinha">
+                    <fieldset class="FSDir">
+                        <legend>Nascimento</legend>
+                        <input type="number" class="numDD" min="1" max="31"> /
+                        <input type="number" class="numDD" min="1" max="12"> /
+                        <input type="number" class="numQD" min="1900" max="2005">
+                    </fieldset>
+                    <label for="idTel" class="colPri">Telefone:</label>
+                    <input type="tel" id="idTel" class="inpTelef"/><br/><br/>
+                    <label for="idCel" class="colPri">Celular:</label>
+                    <input type="tel" id="idCel" class="inpTelef"/>
+                </div>
+            </fieldset>
+
+            <fieldset class="FSLinhaInteira">
+                <legend>Pagamento</legend>
+                <textarea class="listaCompras"></textarea>
+                <fieldset class="FSEsq">
+                    <legend>Cartão</legend>
+                    <div>
+                        <label for="visa" class="colLabCrd">Bandeira:</label>
+                        <input type="radio" id="visa" name="bandeira">
+                        <label for="visa">Visa</label>
+                        <input type="radio" id="master" name="bandeira">
+                        <label for="master">Master</label>
+                        <input type="radio" id="elo" name="bandeira">
+                        <label for="elo">Elo</label>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="mesVal" class="colLabCrd">Validade:</label>
+                        <input type="number" id="mesVal" class="numDD"/> /
+                        <input type="number" id="anoVal" class="numQD"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="numCartao" class="colLabCrd">Número:</label>
+                        <input type="number" id="numCartao" class="inpNCC"/>
+                    </div>
+                    <br/>
+                </fieldset>
+                <div class="colValTot">
+                    <label for="valTot">Valor Total: R$ </label>
+                    <input type="text" class="InpBoxMed">
+                </div>
             </fieldset>
 
             <div class="botoes">
-                <input type="submit" value="Continuar"/>
+                <input type="submit" value="Enviar"/>
                 <input type="reset" value="Limpar"/>
             </div>
         
