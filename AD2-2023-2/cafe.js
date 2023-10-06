@@ -44,7 +44,7 @@ function mostra(cod){
 }
 
 /*
-* QUESTÃO 3
+* QUESTÃO 4
 * Função chamada para crítica do
 * campo Telefone do formulário Cadastro
 */
@@ -63,82 +63,41 @@ function atualiza(cod){
   document.getElementById("valxqt").value = quant*valor
 }
 
-
 /*
-function criticaTel(campo,digito) {
-
-	// String  com o telefone
-	var tel = campo.value;
-	var tipoTel;
-
-	if(digito == 8){ tipoTel = "fixo"; }
-	if(digito == 9){ tipoTel = "celular"; }
-	
-	//Verificando quantidade de digitos
-    if (tel.length < digito) {
-		alert(`Telefone ${tipoTel} tem de ter ${digito} digitos!`);
-		campo.value = "";
-        campo.focus();
-        return false;
-    }
-	
-	// Verificando se todos os caracteres são digitos
-	if ( isNaN(tel) ) {
-		var i, c;
-		for (i = 0; i < digito; i++ ) {
-			c = tel.charAt(i);
-			if ( (c < '0') || (c > '9')) {
-				alert(`Telefone só pode ter dígitos, caracter '${c}' inválido!`);
-			}	
-		}
-		campo.value = "";
-		campo.focus();
-		return false;
-	}
-	
-    return true;
-
-}
-*/
-
-/*
-* QUESTÃO 4
+* QUESTÃO 5
 * Adicionar na lista e somar total
 * +
 * Mensagem de erro em caso de lista de pedidos vazia
 */
-/*
-function incluirProd(){
-  lista = document.getElementById("selProduto");
-  
-  if(lista.value == '-----'){
-      alert("Nenhum produto selecionado!");
+
+function compra(cod){
+  if(cod == 0){
+    lista = document.getElementById("selMaquina");
   }
   else{
-    
-      op = lista.selectedIndex;
-      if(op == 1){
-        texto = "Split - " + lista.value;
-      }
-      else if(op == 4){
-        texto = "Portátil - " + lista.value;
-      }
-      else{
-        texto = "Parede - " + lista.value;
-      }
-
-      document.getElementById("lisPedArea").innerHTML += texto + "\n";
-
-      parcial = parseInt(document.getElementById("valorTotal").value)
-      valor = tabModelos[op-1][1] + parcial;
-      
-      document.getElementById("valorTotal").value = valor;
+    lista = document.getElementById("selCapsula");
   }
-}
-*/
+  if(lista.value == '-----'){
+    alert("Nenhum produto selecionado!");
+  }
+  else{
+    if(cod == 0){
+      qtd = document.getElementById("qtMaq").value
+      prod = tabCafe[parseInt(lista.selectedIndex-1)][0]
+    }
+    else{
+      qtd = document.getElementById("qtCap").value
+      prod = tabCaps[parseInt(lista.selectedIndex-1)][0]
+    }
+    texto = prod + " (" + qtd + ") R$ " + document.getElementById("valxqt").value + ",00"
+    document.getElementById("lisPedArea").innerHTML += texto + "\n";
 
-function limpa(){
-  document.getElementById("lisPedArea").innerHTML = ""
-  document.getElementById("valorTotal").innerHTML = ""
-  document.getElementById("parcelas").innerHTML = ""
+    parcial = parseInt(document.getElementById("valorTotal").value)
+    document.getElementById("valorTotal").value = parcial + parseInt(document.getElementById("valxqt").value)
+
+    document.getElementById("selCapsula").selectedIndex = 0
+    document.getElementById("selMaquina").selectedIndex = 0
+    document.getElementById("qtMaq").value = 1
+    document.getElementById("qtCap").value = 1
+  }
 }

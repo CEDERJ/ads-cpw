@@ -94,7 +94,7 @@
 }
 
 .selMaquina, .selCapsula{ width: 75%; }
-.lisPedArea{ height: 90%; width: 100%; }
+#lisPedArea{ height: 90%; width: 100%; }
 
 .boxPedidos{
   margin: 0px;

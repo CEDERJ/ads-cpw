@@ -48,7 +48,7 @@
                     <div class="ColDir">
                         <label for="qtMaq" class="LabBoxQtd">Qtd:</label>
                         <input type="number" id="qtMaq" class="numQD" value="1" min="1" max="5"/ onchange="atualiza(0)">
-                        <input type="button" value="+" class="buttonPlus">
+                        <input type="button" value="+" class="buttonPlus" onclick="compra(0)">
                     </div>
                 </div>
                 <div class="LinhaForm">
@@ -72,7 +72,7 @@
                     <div class="ColDir">
                         <label for="qtCap" class="LabBoxQtd">Qtd:</label>
                         <input type="number" id="qtCap" class="numQD" value="1" min="1" max="30" onchange="atualiza(1)"/>
-                        <input type="button" value="+" class="buttonPlus">
+                        <input type="button" value="+" class="buttonPlus" onclick="compra(1)">
                     </div>
                 </div>
                 <div class="LinhaForm">
@@ -82,12 +82,12 @@
                     </div>
                 </div>
                 <div class="boxPedidos">
-                    <textarea class="lisPedArea"></textarea>
+                    <textarea id="lisPedArea"></textarea>
                 </div>
                 <div class="LinhaForm">
                     <div class="ColEsqValUnit">
                         <label class="LabBox" for="valTot">Valor Total: R$</label>
-                        <input type="text" class="InpBoxMedLeft"/>
+                        <input type="text" id="valorTotal" class="InpBoxMedLeft" value="0"/>
                     </div>
                 </div>
             </fieldset>
