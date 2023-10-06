@@ -5,6 +5,14 @@ var tabCafe = [
   ["LOV", "TresCoracoesLOV", "Três Corações", 400],
 ];
 
+var tabCaps = [
+ ["Espresso", "CapDolceGusto_10_Espresso", 10, 18],
+ ["Intenso", "CapDolceGusto_10_Intenso", 10, 19],
+ ["Forza / Vibrante", "CapTresCoracoes_30_ForzaVibrante", 30, 44],
+ ["Três Cor. Intenso", "CapDolceGusto_10_Intenso", 10, 20],
+ ["Lor Forza", "CapLorNespreso_10_Forza", 10, 21]
+];
+
 /*
 * QUESTÃO 1
 * Função chamada para abrir os pop-ups
@@ -27,19 +35,35 @@ function abreJanela(cod){
 * Função chamada para exibir as
 * imagens e texto na tabela
 */
-/*
-function mostra(cod){
 
-  document.getElementById("imgDes").src = `Imagens/${tabModelos[cod][0]}.jpg`;
-  document.getElementById("prcDes").innerHTML = `R$ <span class="preco">${tabModelos[cod][1]},00</span>`;
-  
+function mostra(cod){
+  document.getElementById("titDes").innerHTML = `${tabCaps[cod][0]}`;
+  document.getElementById("imgDes").src = `Imagens/${tabCaps[cod][1]}.jpg`;
+  document.getElementById("qtdDes").innerHTML = `QTD: ${tabCaps[cod][2]}`;
+  document.getElementById("prcDes").innerHTML = `Preço: R$ <span class="preco">${tabCaps[cod][3]},00</span>`;
 }
-*/
+
 /*
 * QUESTÃO 3
 * Função chamada para crítica do
 * campo Telefone do formulário Cadastro
 */
+
+function atualiza(cod){
+  if(cod == 0){
+    quant = parseInt(document.getElementById("qtMaq").value)
+    valor = tabCafe[parseInt(document.getElementById("selMaquina").selectedIndex) - 1][3]
+    document.getElementById("selCapsula").selectedIndex = 0
+  }
+  else{
+    quant = parseInt(document.getElementById("qtCap").value)
+    valor = tabCaps[parseInt(document.getElementById("selCapsula").selectedIndex) - 1][3]
+    document.getElementById("selMaquina").selectedIndex = 0
+  }
+  document.getElementById("valxqt").value = quant*valor
+}
+
+
 /*
 function criticaTel(campo,digito) {
 
@@ -111,10 +135,10 @@ function incluirProd(){
       document.getElementById("valorTotal").value = valor;
   }
 }
+*/
 
 function limpa(){
   document.getElementById("lisPedArea").innerHTML = ""
   document.getElementById("valorTotal").innerHTML = ""
   document.getElementById("parcelas").innerHTML = ""
 }
-*/

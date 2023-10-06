@@ -36,11 +36,25 @@
   color: #CC0000;
 }
 
-.tabCap .imgCel{
-  background-color: #FFFFFF;
+.tabCap #imgDes{
+  width: 150px;
+  height: 150px;
 }
 
-.imgCel img{
-  width: 60px;
-  height: 60px;
+.tabCap .menuTab{
+  height: 52px;
+}
+
+.tabCap #celDes{
+  text-align: center;
+  width: 200px;
+}
+
+.tabCap #titDes{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.tabCap #qtdDes, .tabCap #prcDes{
+  font-weight: bold;
 }
