@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.tabPiso{
+  border-collapse: collapse;
+  margin-top: 6px;
+  font-size: 15px;
+  background-color: #EEDDCC;
+  color: #000;
+  font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.tabPiso th{
+  border: 2px solid #888888;
+  padding: 6px 12px 6px 12px;
+}
+
+.tabPiso td{
+  border: 2px solid #000066;
+  padding: 6px 12px 6px 12px;
+}
+
+.tabPiso .titulo{
+  color: #FFFFFF;
+  background-color: #422;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tabPiso .linTH{
+  color: #FFFFFF;
+  background-color: #844;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tabPiso .colTH{
+  color: #FFFFFF;
+  background-color: #422;
+  text-align: left;
+}
+
+.tabPiso .preco{
+  color: #CC0000;
+}
+
+.tabPiso .imgCel{
+  background-color: #FFFFFF;
+}
+
+.imgCel img{
+  width: 60px;
+  height: 60px;
+}
