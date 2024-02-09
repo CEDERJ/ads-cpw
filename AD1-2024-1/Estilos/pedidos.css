@@ -23,13 +23,13 @@
   margin: 0px;
 }
 
-.FSEsq{ /********* NAO USADO **********/
+.FSEsq{
   display: inline;
   margin: 0px;
   float: left;
 }
 
-.FSDir{ /********* NAO USADO **********/
+.FSDir{
   display: inline;
   margin: 0px;
   float: right;
@@ -88,7 +88,7 @@
 }
 
 .InpBoxMed{ width: 50px; }
-.numDD{ width: 35px; } /********* NAO USADO **********/
+.numDD{ width: 35px; }
 
 .boxPedidos{
   margin: 0px;
@@ -107,7 +107,7 @@
 }
 
 .colLabCrd{
-  width: 270px;
+  width: 70px;
   height: 45px;
   text-align: left;
   float: left;
@@ -115,6 +115,7 @@
 
 .colValTot{
   width: 220px;
+  padding-top: 10px;
   text-align: left;
   float: left;
   display: block;
@@ -134,9 +135,3 @@
 .inpNCC{ width: 130px; }
 .inpTelef{ width: 90px; }
 .inpEnder{ width: 180px; height: 60px; }
-
-.InpBoxMedLeft{
-  width: 80px;
-  float: left;
-  display: block;
-}

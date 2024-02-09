@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Refresca Pé</title>
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/pedidos.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="Imagens/RefrescaPeTopo.png">
+        <address class="ender">
+            Rua da Olaria, 3° piso<br>
+            Tel: (21) 98811-2244<br>
+            <a href="mailto:contato@refrescape.com.br">contato@refrescape.com.br</a>
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="RefrescaPe.html">Apresentação</a></li>
+            <li><a href="Porcelanatos.html">Porcelanatos</a></li>
+            <li><a href="Complementos.html">Complementos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        
+        <form class="FormBox">
+            <fieldset class="FSLinhaInteira">
+                <legend>Identificação</legend>
+                <div class="LinhaForm">
+                    <label for="idNome" class="colPri">Nome:</label>
+                    <input type="text" class="InpBoxGnd" id="idNome"/>
+                </div>
+                <div class="LinhaForm">
+                    <label for="idMail" class="colPri">E-mail:</label>
+                    <input type="email" class="InpBoxGnd" id="idMail"/>
+                </div>
+                <div class="LinhaForm">
+                    <fieldset class="FSDir">
+                        <legend>Genero</legend>
+                        <input type="radio" id="mas" name="gen">
+                        <label for="mas">Mas</label>
+                        <input type="radio" id="fem" name="gen">
+                        <label for="mas">Fem</label>
+                        <input type="radio" id="outro" name="gen">
+                        <label for="mas">Outro</label>
+                    </fieldset>
+                    <label for="idEnder" class="colPri">Endereço:</label>
+                    <textarea id="idEnder" class="inpEnder"></textarea>
+                </div>
+                <br/><br/><br/>
+                <div class="LinhaForm">
+                    <fieldset class="FSDir">
+                        <legend>Nascimento</legend>
+                        <input type="number" class="numDD" min="1" max="31"> /
+                        <input type="number" class="numDD" min="1" max="12"> /
+                        <input type="number" class="numQD" min="1900" max="2005">
+                    </fieldset>
+                    <label for="idTel" class="colPri">Telefone:</label>
+                    <input type="tel" id="idTel" class="inpTelef"/><br/><br/>
+                    <label for="idCel" class="colPri">Celular:</label>
+                    <input type="tel" id="idCel" class="inpTelef"/>
+                </div>
+            </fieldset>
+
+            <fieldset class="FSLinhaInteira">
+                <legend>Pagamento</legend>
+                <textarea class="listaCompras"></textarea>
+                <fieldset class="FSEsq">
+                    <legend>Cartão</legend>
+                    <div class="LinhaForm">
+                        <label for="visa" class="colLabCrd">Bandeira:</label>
+                        <input type="radio" id="visa" name="bandeira">
+                        <label for="visa">Visa</label>
+                        <input type="radio" id="master" name="bandeira">
+                        <label for="master">Master</label>
+                        <input type="radio" id="elo" name="bandeira">
+                        <label for="elo">Elo</label>
+                    </div>
+                    <br/>
+                    <div class="LinhaForm">
+                        <label for="mesVal" class="colLabCrd">Validade:</label>
+                        <input type="number" id="mesVal" class="numDD"/> /
+                        <input type="number" id="anoVal" class="numQD"/>
+                    </div>
+                    <br/>
+                    <div class="LinhaForm">
+                        <label for="numCartao" class="colLabCrd">Número:</label>
+                        <input type="number" id="numCartao" class="inpNCC"/>
+                    </div>
+                    <br/>
+                </fieldset>
+                <div class="colValTot">
+                    <label for="valTot">Valor Total: R$ </label>
+                    <input type="text" class="InpBoxMed" id="valTot">
+                </div>
+            </fieldset>
+
+            <div class="botoes">
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpar"/>
+            </div>
+        
+        </form>
+    </section>
+</body>
+</html>
