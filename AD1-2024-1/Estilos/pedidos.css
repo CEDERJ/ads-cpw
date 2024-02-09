@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.FormBox{
+  width: 540px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: #000;
+  background-color: #EDC;
+  border: 3px solid #005;
+  font-size: 16px;
+  font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.FSLinhaInteira{
+  width: 94%;
+  text-align: left;
+}
+
+.FSLinha{
+  width: 96%;
+  display: block;
+  margin: 0px;
+}
+
+.FSEsq{ /********* NAO USADO **********/
+  display: inline;
+  margin: 0px;
+  float: left;
+}
+
+.FSDir{ /********* NAO USADO **********/
+  display: inline;
+  margin: 0px;
+  float: right;
+}
+
+.LinhaForm{
+  margin: 0px;
+  height: 30px;
+  padding: 6px 3px 0px 3px;
+}
+
+.colPerc25{ /********* NAO USADO **********/
+  padding-top: 10px;
+  float: left;
+  height: 30px;
+  width: 25%;
+}
+
+.colPerc40{ /********* NAO USADO **********/
+  padding-top: 10px;
+  float: right;
+  height: 30px;
+  width: 40%;
+}
+
+.colPerc50{ /********* NAO USADO **********/
+  padding-top: 10px;
+  float: left;
+  vertical-align: middle;
+  height: 30px;
+  width: 50%;
+}
+
+.colPerc60{ /********* NAO USADO **********/
+  padding-top: 10px;
+  float: left;
+  height: 30px;
+  width: 60%;
+}
+
+.selecPerc100Cel{ /********* NAO USADO **********/
+  width: 100%;
+}
+
+.elemPosDir{
+  float: right;
+}
+
+.elemPosEsq{ /********* NAO USADO **********/
+  float: left;
+}
+
+.botoes{
+  text-align: right;
+  margin: 20px 10px 0px 10px;
+}
+
+.InpBoxMed{ width: 50px; }
+.numDD{ width: 35px; } /********* NAO USADO **********/
+
+.boxPedidos{
+  margin: 0px;
+  height: 100px;
+  padding: 6px 3px 0px 3px;
+}
+
+.lisPedArea{ height: 90%; width: 100%; }
+
+/* Cadastro */
+
+.colPri{
+  width: 90px;
+  float: left;
+  display: block;
+}
+
+.colLabCrd{
+  width: 270px;
+  height: 45px;
+  text-align: left;
+  float: left;
+}
+
+.colValTot{
+  width: 220px;
+  text-align: left;
+  float: left;
+  display: block;
+}
+
+.listaCompras{
+  width: 190px;
+  height: 200px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  float: right;
+}
+
+.InpBoxGnd{ width: 380px; }
+.numQD{ width: 50px; }
+.inpNCC{ width: 130px; }
+.inpTelef{ width: 90px; }
+.inpEnder{ width: 180px; height: 60px; }
+
+.InpBoxMedLeft{
+  width: 80px;
+  float: left;
+  display: block;
+}

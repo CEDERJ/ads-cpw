@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Refresca Pé</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/pedidos.css">
 </head>
 <body>
     <header>
@@ -23,7 +24,72 @@
         </ul>
     </nav>
     <section>
+        <form class="FormBox" method="get" action="Cadastro.html">
+            <fieldset class="FSLinhaInteira">
+                <legend>Seleção de Produtos</legend>
+                <fieldset class="FSLinha">
+                    <legend>Pisos e Rodapés</legend>
+                    <select id="selPisos">
+                        <option>-----</option>
+                        <optgroup label="Porcelanato">
+                            <option>Cimentício Bege Portinari</option>
+                            <option>Decorado Fiori Lotus Biancogres</option>
+                            <option>Marmorizado Beige Lux Biancogres</option>
+                            <option>Amadeirado Nogueira Eliane</option>
+                        </optgroup>
+                        <optgroup label="Rodapé">
+                            <option>LEV 102 Branco Santa Luzia</option>
+                            <option>MDF Moldufama 1002 Nogueira</option>
+                        </optgroup>
+                    </select>
+                    <label for="metrosP">Metros:</label>
+                    <input type="text" id="metrosP" class="InpBoxMed"/>
+                    <label for="caixasP">Caixas:</label>
+                    <input type="text" id="caixasP" class="InpBoxMed"/>
+                    <br/><br/>
+                    <div class="LinhaForm">
+                        <label for="totParcPisos">Total Parcial: R$</label>
+                        <input type="text" class="InpBoxMed" id="totParcPisos"/>
+                        <input type="button" value="Incluir Produtos" class="elemPosDir">
+                    </div>
+                </fieldset>
+                <br/>
+                <fieldset class="FSLinha">
+                    <legend>Complementos</legend>
+                    <select id="selComplem">
+                        <option>-----</option>
+                        <option>Espaçador 2mm 300 peças Standers</option>
+                        <option>Argamassa Branca 20kg Axton</option>
+                        <option>Rejunte Marfim 1kg Axton</option>
+                        <option>Cola para Moldura 400g Santa Luzia</option>
+                    </select>
+                    <div class="elemPosDir">
+                        <label for="qtdC">Quantidade:</label>
+                        <input type="text" id="qtdC" class="InpBoxMed"/>
+                    </div>
+                    <br/><br/>
+                    <div class="LinhaForm">
+                        <label for="totParcComps">Total Parcial: R$</label>
+                        <input type="text" class="InpBoxMed" id="totParcComps"/>
+                        <input type="button" value="Incluir Produtos" class="elemPosDir">
+                    </div>
+                </fieldset>
+                <br/>
+                <div class="boxPedidos">
+                    <textarea class="lisPedArea"></textarea>
+                </div>
+                <div class="LinhaForm">
+                    <label for="valTot">Valor Total: R$</label>
+                    <input type="text" class="InpBoxMed"/>
+                </div>
+            </fieldset>
 
+            <div class="botoes">
+                <input type="submit" value="Continuar"/>
+                <input type="reset" value="Limpar"/>
+            </div>
+        
+        </form>
     </section>
 </body>
 </html>
