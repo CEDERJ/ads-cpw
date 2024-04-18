@@ -51,3 +51,14 @@
   width: 60px;
   height: 60px;
 }
+
+.menuTab{
+  height: 80px;
+  text-align: center;
+}
+
+.celDesc{
+  width: 240px;
+  background-color: white;
+  text-align: center;
+}

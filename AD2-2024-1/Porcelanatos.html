@@ -5,6 +5,7 @@
     <title>Refresca Pé</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/porcelanatos.css">
+    <script src="piso.js"></script>
 </head>
 <body>
     <header>
@@ -32,41 +33,29 @@
                 <tr>
                     <th class="linTH">Marca</th>
                     <th class="linTH">Tipo</th>
-                    <th class="linTH">Dimensões</th>
-                    <th class="linTH">Caixa</th>
-                    <th class="linTH">Preço/m²</th>
-                    <th class="linTH">Imagem</th>
+                    <th class="linTH">Descrição</th>
                 </tr>
                 <tr>
                     <th class="colTH">Portinari</th>
-                    <td>Cimentício Bege</td>
-                    <td>87,7 x 87,7 cm</td>
-                    <td>1,54 m²</td>
-                    <td class="preco">R$ 110,00</td>
-                    <td class="imgCel"><img src="Imagens/Piso_Cimenticio_Portinari.png"></td>
+                    <td class="menuTab"><a href="javascript:mostra(0)">Cimentício Bege</a></td>
+                    <td rowspan="4" class="celDesc">
+                        <h3 id="titDes"></h3>
+                        <p id="tamDes"></p>
+                        <img id="imgDes" src="Imagens/vazio_150.png"/>
+                        <p id="caixaDes"></p>
+                        <p id="prcDes"></p>
+                    </td>
                 </tr>
                 <tr>
                     <th rowspan="2" class="colTH">Biancogres</th>
-                    <td>Decorado</td>
-                    <td>60 x 60 cm</td>
-                    <td>2,2 m²</td>
-                    <td class="preco">R$ 200,00</td>
-                    <td class="imgCel"><img src="Imagens/Piso_Decorado_Biancogres.png"></td>
+                    <td class="menuTab"><a href="javascript:mostra(1)">Decorado</a></td>
                 </tr>
                 <tr>
-                    <td>Marmorizado</td>
-                    <td>90 x 90 cm</td>
-                    <td>2,4 m²</td>
-                    <td class="preco">R$ 280,00</td>
-                    <td class="imgCel"><img src="Imagens/Piso_Marmorizado_Biancogres.png"></td>
+                    <td class="menuTab"><a href="javascript:mostra(2)">Marmorizado</a></td>
                 </tr>
                 <tr>
                     <th class="colTH">Eliane</th>
-                    <td>Amadeirado Nogueira</td>
-                    <td>19,7 x 120 cm</td>
-                    <td>1,42 m²</td>
-                    <td class="preco">R$ 150,00</td>
-                    <td class="imgCel"><img src="Imagens/Piso_Amadeirado_Eliane.png"></td>
+                    <td class="menuTab"><a href="javascript:mostra(3)">Amadeirado Nogueira</a></td>
                 </tr>
             </tbody>
         </table>

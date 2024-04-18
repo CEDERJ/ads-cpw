@@ -8,13 +8,12 @@ var tabCompl = [
   ["Cola para Moldura", "Santa Luzia", "Cola_Rod_SantaLuzia_150", "400g", 47]
 ];
 
-/*
-var tabCaps = [
- ["Espresso", "CapDolceGusto_10_Espresso", 10, 18],
- ["Intenso", "CapDolceGusto_10_Intenso", 10, 19],
- ["Forza / Vibrante", "CapTresCoracoes_30_ForzaVibrante", 30, 44],
- ["Três Cor. Intenso", "CapDolceGusto_10_Intenso", 10, 20],
- ["Lor Forza", "CapLorNespreso_10_Forza", 10, 21]
+
+var tabPorc = [
+  ["Cimentício Bege", "87,7 x 87,7 cm", "Piso_Cime_Portinari_150", "1,54 m²", 200],
+  ["Decorado", "60 x 60 cm", "Piso_Deco_Biancogres_150", "2,2 m²", 200],
+  ["Marmorizado", "90 x 90 cm", "Piso_Marm_Biancogres_150", "2,4 m²", 280],
+  ["Amadeirado Nogueira", "19,7 x 120 cm", "Piso_Amad_Eliane_150", "1,42 m²", 150]
 ];
 
 /*
@@ -42,12 +41,13 @@ function abreJanela(cod){
 * Função chamada para exibir as
 * imagens e texto na tabela
 */
-/*
+
 function mostra(cod){
-  document.getElementById("titDes").innerHTML = `${tabCaps[cod][0]}`;
-  document.getElementById("imgDes").src = `Imagens/${tabCaps[cod][1]}.jpg`;
-  document.getElementById("qtdDes").innerHTML = `QTD: ${tabCaps[cod][2]}`;
-  document.getElementById("prcDes").innerHTML = `Preço: R$ <span class="preco">${tabCaps[cod][3]},00</span>`;
+  document.getElementById("titDes").innerHTML = `${tabPorc[cod][0]}`;
+  document.getElementById("tamDes").innerHTML = `Tamanho: ${tabPorc[cod][1]}`;
+  document.getElementById("imgDes").src = `Imagens/${tabPorc[cod][2]}.png`;
+  document.getElementById("caixaDes").innerHTML = `Caixa: ${tabPorc[cod][3]}`;
+  document.getElementById("prcDes").innerHTML = `Preço: R$ <span class="preco">${tabPorc[cod][4]},00</span>`;
 }
 
 /*
