@@ -16,6 +16,15 @@ var tabPorc = [
   ["Amadeirado Nogueira", "19,7 x 120 cm", "Piso_Amad_Eliane_150", "1,42 m²", 150]
 ];
 
+var tabProd = [
+  ["Área","Caixas",1.54,200],
+  ["Área","Caixas",2.2,200],
+  ["Área","Caixas",2.4,280],
+  ["Área","Caixas",1.42,150],
+  ["Metro","Peças",2.4,78],
+  ["Metro","Peças",2.4,35]
+];
+
 /*
 * QUESTÃO 1
 * Função chamada para abrir os pop-ups
@@ -52,59 +61,43 @@ function mostra(cod){
 
 /*
 * QUESTÃO 4
-* Função chamada para crítica do
-* campo Telefone do formulário Cadastro
+* Função chamada para atualizar rótulos do formulário
 */
-/*
-function atualiza(cod){
-  if(cod == 0){
-    quant = parseInt(document.getElementById("qtMaq").value)
-    valor = tabCafe[parseInt(document.getElementById("selMaquina").selectedIndex) - 1][3]
-    document.getElementById("selCapsula").selectedIndex = 0
+
+function atualiza(){
+  cod = document.getElementById("selPisos").selectedIndex-1
+  document.getElementById("metrosP").value = ""
+  document.getElementById("caixasP").value = ""
+  document.getElementById("totParcPisos").value = ""
+  if(cod >= 0 && cod <= 3){
+    document.getElementById("qtdDesej").innerHTML = "Área:"
+    document.getElementById("unidVenda").innerHTML = "Caixas"
   }
   else{
-    quant = parseInt(document.getElementById("qtCap").value)
-    valor = tabCaps[parseInt(document.getElementById("selCapsula").selectedIndex) - 1][3]
-    document.getElementById("selMaquina").selectedIndex = 0
+    document.getElementById("qtdDesej").innerHTML = "Metro:"
+    document.getElementById("unidVenda").innerHTML = "Peças"
   }
-  document.getElementById("valxqt").value = quant*valor
 }
 
 /*
 * QUESTÃO 5
-* Adicionar na lista e somar total
-* +
-* Mensagem de erro em caso de lista de pedidos vazia
+* Calcular quantidade total do produto
 */
-/*
-function compra(cod){
-  if(cod == 0){
-    lista = document.getElementById("selMaquina");
+
+function calcula(){
+  total = document.getElementById("metrosP").value
+  cod = document.getElementById("selPisos").selectedIndex-1
+
+  if(isNaN(total)){
+    alert(`${tabProd[cod][0]} deve ser número`)
+    document.getElementById("metrosP").value = ""
+    document.getElementById("caixasP").value = ""
+    document.getElementById("totParcPisos").value = ""
   }
   else{
-    lista = document.getElementById("selCapsula");
-  }
-  if(lista.value == '-----'){
-    alert("Nenhum produto selecionado!");
-  }
-  else{
-    if(cod == 0){
-      qtd = document.getElementById("qtMaq").value
-      prod = tabCafe[parseInt(lista.selectedIndex-1)][0]
-    }
-    else{
-      qtd = document.getElementById("qtCap").value
-      prod = tabCaps[parseInt(lista.selectedIndex-1)][0]
-    }
-    texto = prod + " (" + qtd + ") R$ " + document.getElementById("valxqt").value + ",00"
-    document.getElementById("lisPedArea").innerHTML += texto + "\n";
-
-    parcial = parseInt(document.getElementById("valorTotal").value)
-    document.getElementById("valorTotal").value = parcial + parseInt(document.getElementById("valxqt").value)
-
-    document.getElementById("selCapsula").selectedIndex = 0
-    document.getElementById("selMaquina").selectedIndex = 0
-    document.getElementById("qtMaq").value = 1
-    document.getElementById("qtCap").value = 1
-  }
-}*/
+    quant = Math.round(total / tabProd[cod][2] + 0.5)
+    document.getElementById("caixasP").value = quant
+    document.getElementById("metrosP").value = quant * tabProd[cod][2]
+    document.getElementById("totParcPisos").value = quant * tabProd[cod][3]
+  }  
+}

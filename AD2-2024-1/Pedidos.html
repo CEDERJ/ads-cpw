@@ -5,6 +5,7 @@
     <title>Refresca Pé</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/pedidos.css">
+    <script src="piso.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
                 <legend>Seleção de Produtos</legend>
                 <fieldset class="FSLinha">
                     <legend>Pisos e Rodapés</legend>
-                    <select id="selPisos">
+                    <select id="selPisos" onchange="atualiza()">
                         <option>-----</option>
                         <optgroup label="Porcelanato">
                             <option>Cimentício Bege Portinari</option>
@@ -42,11 +43,11 @@
                             <option>MDF Moldufama 1002 Nogueira</option>
                         </optgroup>
                     </select>
-                    <label id="iarea" for="metrosP">Área:</label>
-                    <input type="text" id="metrosP" class="InpBoxMed"/>
+                    <label id="qtdDesej" for="metrosP">Área:</label>
+                    <input type="text" id="metrosP" class="InpBoxMed" onchange="calcula()"/>
                     <span>&rArr;</span>
                     <input type="text" id="caixasP" class="InpBoxMed"/>
-                    <label id="icaixas" for="caixasP">Caixas</label>
+                    <label id="unidVenda" for="caixasP">Caixas</label>
                     <br/><br/>
                     <div class="LinhaForm">
                         <label for="totParcPisos">Total Parcial: R$</label>
