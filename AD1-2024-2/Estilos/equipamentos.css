@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.tabEquip{
+  border: 1px solid;
+  border-collapse: separate;
+  width: 510px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.tabTitulo{
+  background-color: #402020;
+  color: #FFFFFF;
+}
+
+.tabSubTit{
+  background-color: #802020;
+  color: #FFFFFF;
+}
+
+.tabEquip th{
+  border: 1px solid;
+  padding: 10px;
+}
+
+.tabEquip td{
+  border: 1px solid;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #EEEEBB;
+}
+
+.tabEquip .imgCel{
+  width: 100px;
+  background-color: #FFFFFF;
+}
+
+.imgCel img{
+  width: 100px;
+  height: 100px;
+}
