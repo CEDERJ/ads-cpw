@@ -5,6 +5,7 @@
     <title>Espuma Era a Lei</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/pedidos.css">
+    <script src="teste.js"></script>
 </head>
 <body>
     <header>
@@ -56,9 +57,9 @@
                         <input type="number" class="numQD" min="1900" max="2005">
                     </fieldset>
                     <label for="idTel" class="colPri">Telefone:</label>
-                    <input type="tel" id="idTel" class="inpTelef"/><br/><br/>
+                    <input type="tel" id="idTel" class="inpTelef" onchange="analisaTel(this,8)"/><br/><br/>
                     <label for="idCel" class="colPri">Celular:</label>
-                    <input type="tel" id="idCel" class="inpTelef"/>
+                    <input type="tel" id="idCel" class="inpTelef" onchange="analisaTel(this,9)"/>
                 </div>
             </fieldset>
 
