@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Queijos</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/queijos.css">
 </head>
 <body>
     <header>
@@ -23,28 +24,57 @@
         </ul>
     </nav>
     <section>
-      <h3 class="titulo">Materiais Elétricos</h3>
-      <ul class="listaMat">
-        <li>Cabo Fléxivel:</li>
-        <ol>
-            <li>Sil Preto 2,5 mm 100m (R$ <span class="preco">200,00</span>)</li>
-            <li>Cobrecom Azul 2,5 mm 100m (R$ <span class="preco">190,00</span>)</li>
-            <li>Sil Verde 2,5 mm 50m (R$ <span class="preco">150,00</span>)</li>
-        </ol>
-        <br/>
-        <li>Terminais Ilhós:</li>
-        <ol>
-            <li>2,5 mm 200 peças (R$ <span class="preco">30,00</span>)</li>
-            <li>4 mm 100 peças (R$ <span class="preco">20,00</span>)</li>
-        </ol>
-        <br/>
-        <li>Condúite:</li>
-        <ol>
-            <li>1/2" 25m (R$ <span class="preco">50,00</span>)</li>
-            <li>3/4" 50m (R$ <span class="preco">100,00</span>)</li>
-        </ol>
-      </ul>
+        <table class="tabQueijo">
+            <thead>
+                <tr><th class="linTH" colspan="5">Queijos</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="linTH">Procedência</th> 
+                    <th class="linTH">Tipo</th> 
+                    <th class="linTH">Imagem</th> 
+                    <th class="linTH">Peso</th> 
+                    <th class="linTH">Preço</th>
+                </tr> 
+            
+                <tr>
+                    <th rowspan="3" class="colTH">Nacional</th></td> 
+                    <td>Canastra</td> 
+                    <td><img class="imgQueijo" src="Imagens/QueijoCanastra.jpg" /></td> 
+                    <td>500g</td> 
+                    <td class="preco">R$ 70,00</td>
+                </tr>
 
+                <tr>
+                    <td>Minas</td> 
+                    <td><img class="imgQueijo" src="Imagens/QueijoMinas.jpg" /></td> 
+                    <td>400g</td> 
+                    <td class="preco">R$ 23,00</td>
+                </tr> 
+                
+                <tr>
+                    <td>Coalho</td> 
+                    <td><img class="imgQueijo" src="Imagens/QueijoCoalho.jpg" /></td> 
+                    <td>500g</td> 
+                    <td class="preco">R$ 40,00</td>
+                </tr> 
+            
+                <tr>
+                    <th rowspan="2" class="colTH">Internacional</th></td> 
+                    <td>Gorgonzola</td> 
+                    <td><img class="imgQueijo" src="Imagens/QueijoGorgonzola.jpg" /></td> 
+                    <td>200g</td> 
+                    <td class="preco">R$ 20,00</td>
+                </tr> 
+                
+                <tr>
+                    <td>Brie</td> 
+                    <td><img class="imgQueijo" src="Imagens/QueijoBrie.jpg" /></td> 
+                    <td>200g</td> 
+                    <td class="preco">R$ 30,00</td>
+                </tr> 
+            </tbody>
+        </table>
     </section>
 </body>
 </html>

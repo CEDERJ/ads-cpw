@@ -1,0 +1,40 @@
+.tabQueijo { 
+    color: #114499; 
+    margin-top: 6px; 
+    border-collapse: collapse; 
+    background-color: #FFFFBB; 
+    font-size: 15px; 
+    font-family: karla, verdana, ubuntu; 
+} 
+ 
+.tabQueijo th { 
+    border:  2px solid #000000; 
+    padding: 6px 12px 6px 12px; 
+} 
+ 
+.tabQueijo td { 
+    border:  2px solid #000000; 
+    padding: 6px 12px 6px 12px; 
+} 
+ 
+.tabQueijo .linTH { 
+    color: #EEEE00; 
+    text-align: center; 
+    vertical-align: middle; 
+    background-color: #887733; 
+} 
+ 
+.tabQueijo .colTH { 
+    color: #222222; 
+    text-align: left; 
+    background-color: #CCBB88; 
+} 
+ 
+.tabQueijo .preco { 
+    color: #CC0000; 
+} 
+ 
+.tabQueijo .imgQueijo { 
+    width: 60px; 
+    height: 44px; 
+}
