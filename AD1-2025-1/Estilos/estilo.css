@@ -8,14 +8,14 @@ nav{ display: block; width: 20%; float: left; }
 section{ display: block; width: 70%; float: right; }
 
 body{
-  background-color: #2277DD;
-  color: #FFEE44;
+  background-color: #EEDDAA;
+  color: #3366BB;
   font-size: 16px;
   font-family: 'Stoke', 'Lucida Bright', 'Liberation';
 }
 
-a{ text-decoration: none; color: #FFEE55; }
-a:visited{ text-decoration: none; color: #FFEE33; }
+a{ text-decoration: none; color: #2255AA; }
+a:visited{ text-decoration: none; color: #2255CC; }
 ol, ul{ line-height: 200%; }
 
 .ender{
@@ -27,9 +27,9 @@ ol, ul{ line-height: 200%; }
 }
 
 .imgLogo{
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 4px solid #3366BB;
   margin-bottom: 6px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
   
 .apres{
@@ -38,8 +38,8 @@ ol, ul{ line-height: 200%; }
 }
   
 nav ul{
-  color: #FFEE44;
+  color: #3366BB;
   line-height: 230%;
   margin-top: 40px;
-  list-style-type: square;
+  list-style-type: disc;
 }
