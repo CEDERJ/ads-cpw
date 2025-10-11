@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/pedidos.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="Imagens/CanastraoLogoTopo.png">
+        <address class="ender">
+            Av. Gorgonzola, 234<br>
+            Tel: (21) 91234-1234<br>
+            <a href="mailto:contato@canastrao.com.br">contato@canastrao.com.br</a>
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="CanastraoQueijos.html">Apresentação</a></li>
+            <li><a href="Harmonizacao.html">Harmonização</a></li>
+            <li><a href="Queijos.html">Queijos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="divCompras"> 
+            <h3>Compras</h3> 
+            <form method="POST"> 
+                <fieldset>
+                    <legend> Identificação</legend> 
+                    <div class="divLinha"> 
+                        <label class="colPri">Nome: </label> 
+                        <input type="text"  class="inpGrande" name="TxtNomeCompleto" />
+                    </div> 
+                    <div class="divLinha"> 
+                        <label for="idEmail" class="colPri">E-mail:</label> 
+                        <input id="idEmail"  class="inpGrande" type="email"  name="TxtEmail" required />
+                    </div> 
+                    <div class="divLinha"> 
+                        <label class="colPri">Endereço: </label> 
+                        <textarea name="TxtEnder" class="inpEnder"></textarea>
+
+                        <fieldset class="fsDir">
+                            <legend>Genero:</legend> 
+                            <label><input type="radio" name="TglSexo" value="M" checked />Mas</label> 
+                            <label><input type="radio" name="TglSexo" value="F" />Fem</label> 
+                            <label><input type="radio" name="TglSexo" value="O" />Outro</label> 
+                        </fieldset>
+                    </div>  
+                    <div class="divLinha"> 
+                        <fieldset class="fsDir">
+                            <legend>Nascimento:</legend> 
+                            <input type="number" name="TxtDiaNasc" min="1" max="31" class="numDD" /> / 
+                            <input type="number" name="TxtMesNasc" min="1" max="12" class="numDD"  /> / 
+                            <input type="number" name="TxtAnoNasc" min="1920" max="2002" class="numQD"  /> 
+                        </fieldset> 
+                        <p>
+                            <label class="colPri">Telefone:</label> 
+                            <input type="text" class="inpTelef" name="TxtTelefone" required />
+                        </p> 
+                        <label class="colPri">Celular:</label> 
+                        <input type="text" class="inpTelef" name="TxtCelular" />
+                    </div> 
+                </fieldset> 
+                
+                <fieldset>
+                    <legend>Seleção de Produtos e Pagamento&nbsp;</legend> 
+                    <select name="selProduto" id="selProduto"> 
+                        <option> ----- </option> 
+                        <optgroup label="Nacional"> 
+                            <option>Canastra (500g)</option> 
+                            <option>Queijo Minas (400g)</option> 
+                            <option>Queijo Coalho (500g)</option>
+                        </optgroup> 
+                        <optgroup label="Internacional"> 
+                            <option>Gorgonzola (200g)</option> 
+                            <option>Queijo Brie (200g)</option>
+                        </optgroup> 
+                    </select> 
+                <input type="button" value="Comprar" /> 
+                <textarea class="listaCompras" name="listaPedidos" readonly></textarea> 
+                <br/><br/> 
+                
+                    <fieldset class="fsEsq">
+                        <legend> Cartão&nbsp;</legend> 
+                        <label class="colLabCrd" >Bandeira: 
+                            <label><input type="radio" name="RadBand" checked />Visa</label> 
+                            <label><input type="radio" name="RadBand" />Master</label> 
+                            <label><input type="radio" name="RadBand" />Elo</label> 
+                        </label><br/> 
+                    
+                        <label class="colLabCrd" for="mesVal">Validade: 
+                        <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD" value="5" /> / 
+                        <input type="number" name="TxtAnoVal" value="2025" min="2025" max="2045" class="numQD" /></label><br/> 
+                        
+                        <label class="colLabCrd" for="numCar">Número: 
+                        <input type=text name="TxtNumCard" class="inpNCC" id="numCar"/></label>
+                        <br/> 
+                    
+                    </fieldset> 
+                    
+                    <label class="elemDir" for="TxtTotal"><br/>Valor R$ 
+                    <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpMedio" /></label> 
+                
+                </fieldset> 
+                
+                <div class="botoes"> 
+                    <input type="submit" value="Enviar" /> 
+                    <input type="reset"  value="Limpar" /> 
+                </div>
+            </form> 
+        </div>
+    </section>
+</body>
+</html>

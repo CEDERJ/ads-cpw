@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Acabamentos</title>
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/acabamentos.css">
+    <script src="chique.js"></script>
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="Imagens/LogoChiqueEletricoTopo.png">
+        <address class="ender">
+            Rua Chique Chique, 123<br>
+            Tel: (21) 91234-4321<br>
+            <a href="mailto:contato@chiqueeletrico.com.br">contato@chiqueeletrico.com.br</a>
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="ChiqueEletrico.html">Apresentação</a></li>
+            <li><a href="Materiais.html">Materiais</a></li>
+            <li><a href="Acabamentos.html">Acabamentos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <table class="tabAcab">
+            <thead>
+                <tr><th colspan="4" class="linTH">Acabamentos</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="linTH">Marca/Linha</td>
+                    <td class="linTH">Produto</td>
+                    <td class="linTH">Descrição</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" class="colTH">Ilumi/Stylus</th>
+                    <td class="menuTab"><a href="javascript:mostra(0)">Placa 4x4</a></td>
+                    <td rowspan="6">
+                        <h3 id="marcaDes"></h3>
+                        <p id="nomeDes"></p>
+                        <img id="imgDes" src="Imagens/vazio_150.png">
+                        <p id="prcDes"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="menuTab"><a href="javascript:mostra(1)">Tomada</a></td>
+                </tr>
+                <tr>
+                    <td class="menuTab"><a href="javascript:mostra(2)">Interruptor</a></td>
+                </tr>
+                <tr>
+                    <th rowspan="3" class="colTH">Ilumi/Slim</th>
+                    <td class="menuTab"><a href="javascript:mostra(3)">Placa 4x2</a></td>
+                </tr>
+                <tr>
+                    <td class="menuTab"><a href="javascript:mostra(4)">Módulo Tomada</a></td>
+                </tr>
+                <tr>
+                    <td class="menuTab"><a href="javascript:mostra(5)">Módulo Interruptor</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Planos</title>
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/pedidos.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="Imagens/LogoChiqueEletricoTopo.png">
+        <address class="ender">
+            Rua Chique Chique, 123<br>
+            Tel: (21) 91234-4321<br>
+            <a href="mailto:contato@chiqueeletrico.com.br">contato@chiqueeletrico.com.br</a>
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="ChiqueEletrico.html">Apresentação</a></li>
+            <li><a href="Materiais.html">Materiais</a></li>
+            <li><a href="Acabamentos.html">Acabamentos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h3>Compras</h3>
+        <form class="divCompras">
+            <fieldset>
+                <legend>Identificação</legend>
+                <div class="divLinha">
+                    <label for="idNome" class="colPri">Nome:</label>
+                    <input type="text" class="inpGrande" id="idNome"/>
+                </div>
+                <div class="divLinha">
+                    <label for="idEmail" class="colPri">E-mail:</label>
+                    <input type="text" class="inpGrande" id="idEmail"/>
+                </div>
+                <div class="divLinha">
+                    <label for="idEnder" class="colPri">Endereço:</label>
+                    <textarea class="inpEnder" id="idEnder"></textarea>
+                    <fieldset class="fsDir">
+                        <legend>Genero</legend>
+                        <input type="radio" id="mas" name="gen">
+                        <label for="mas">Mas</label>
+                        <input type="radio" id="fem" name="gen">
+                        <label for="mas">Fem</label>
+                        <input type="radio" id="outro" name="gen">
+                        <label for="mas">Outro</label>
+                    </fieldset>
+                </div>
+                <div class="divLinha">
+                    <fieldset class="fsDir">
+                        <legend>Nascimento</legend>
+                        <input type="number" id="dia" class="numDD" min="1" max="31"/> /
+                        <input type="number" id="mes" class="numDD" min="1" max="12"/> /
+                        <input type="number" id="ano" class="numQD" min="1900"/>
+                    </fieldset>
+
+                    <label for="idTel" class="colPri">Telefone:</label>
+                    <input type="tel" id="idTel" class="inpTelef"/><br/><br/>
+                    <label for="idCel" class="colPri">Celular:</label>
+                    <input type="tel" id="idCel" class="inpTelef"/><br/><br/>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seleção de Produtos e Pagamento</legend>
+                <textarea class="listaCompras"></textarea>
+                <select class="colSelProd">
+                    <option>-----</option>
+                    <optgroup label="Acabamento Stylus">
+                        <option>Placa 4x4</option>
+                        <option>Tomada</option>
+                        <option>Interruptor</option>
+                    </optgroup>
+                    <optgroup label="Acabamento Slim">
+                        <option>Placa 4x2</option>
+                        <option>Módulo Tomada</option>
+                        <option>Módulo Interruptor</option>
+                    </optgroup>
+                    <optgroup label="Cabo Flexível">
+                        <option>Sil Preto 2,5 mm (100 m)</option>
+                        <option>Cobrecom Azul 2,5 mm (100 m)</option>
+                        <option>Sil Verde 2,5 mm (50 m)</option>
+                    </optgroup>
+                    <optgroup label="Terminais Ilhós">
+                        <option>2,5 mm (200 peças)</option>
+                        <option>4 mm (100 peças)</option>
+                    </optgroup>
+                    <optgroup label="Conduítes">
+                        <option>Plastilit 1/2" 25 m</option>
+                        <option>Plastilit 3/4" 50 m</option>
+                    </optgroup>
+                </select>
+                <br/><br/>
+                <input class="botao" type="button" value="Comprar">
+                <br/><br/>
+                <fieldset class="fsEsq">
+                    <legend>Cartão</legend>
+                    <div>
+                        <label for="visa" class="colLabCrd">Bandeira:</label>
+                        <input type="radio" id="visa" name="bandeira">
+                        <label for="visa">Visa</label>
+                        <input type="radio" id="master" name="bandeira">
+                        <label for="master">Master</label>
+                        <input type="radio" id="elo" name="bandeira">
+                        <label for="elo">Elo</label>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="mesVal" class="colLabCrd">Validade:</label>
+                        <input type="number" id="mesVal" class="numDD" min="1" max="12" value="10"/> /
+                        <input type="number" id="anoVal" class="numQD" value="2024" min="2024"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="numCartao" class="colLabCrd">Número:</label>
+                        <input type="number" id="numCartao" class="inpNCC"/>
+                    </div>
+                    <br/>
+                </fieldset>
+                <br/>
+                <div class="elemDir">
+                    <label  for="valTot">Valor: R$ </label>
+                    <input type="text" class="inpMedio" id="valTot">
+                </div>
+                </div>
+            </fieldset>
+            <br/>
+            <div class="botoes">
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpar"/>
+            </div>
+        
+        </form>
+    </section>
+</body>
+</html>

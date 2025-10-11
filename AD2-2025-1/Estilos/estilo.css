@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+
+header{ display: block; margin-bottom: 1px; }
+nav{ display: block; width: 20%; float: left; }
+section{ display: block; width: 70%; float: right; }
+
+body{
+  background-color: #EEDDAA;
+  color: #3366BB;
+  font-size: 16px;
+  font-family: 'Stoke', 'Lucida Bright', 'Liberation';
+}
+
+a{ text-decoration: none; color: #2255AA; }
+a:visited{ text-decoration: none; color: #2255CC; }
+ol, ul{ line-height: 200%; }
+
+.ender{
+  float: right;
+  text-align: right;
+  line-height: 140%;
+  font-size: 14px;
+  font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.imgLogo{
+  border-bottom: 4px solid #3366BB;
+  margin-bottom: 6px;
+  padding-bottom: 15px;
+}
+  
+.apres{
+  text-align: center;
+  font-size: 16px;
+}
+  
+nav ul{
+  color: #3366BB;
+  line-height: 230%;
+  margin-top: 40px;
+  list-style-type: disc;
+}
