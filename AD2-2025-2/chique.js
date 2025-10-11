@@ -6,7 +6,7 @@ var tabMateriais = [
     ["Terminais Ilhós", "2,5 mm", "TermIlhos2p5_150", "200 peças", 30],
     ["Terminais Ilhós", "2,5 mm", "TermIlhos4_150", "100 peças", 200],
     ["Conduíte", '1/2"', "Plastlit1b2_150", "25 m", 200],
-    ["Conduíte", '3/4"', "Plastlit3b4_150", "50 m", 200],
+    ["Conduíte", '3/4"', "Plastlit3b4_150", "50 m", 200]
   ];
 
   var tabAcabamentos = [
@@ -134,7 +134,7 @@ function criticaTel(campo,digito) {
   
   /*
   * QUESTÃO 4
-  * Calcular valor do plano
+  * Adicionar produtos na lista de compras
   */
   
   function addProduto(){

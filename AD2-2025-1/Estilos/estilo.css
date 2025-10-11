@@ -43,3 +43,25 @@ nav ul{
   margin-top: 40px;
   list-style-type: disc;
 }
+
+.janQueijos{
+  text-align: center;
+  font-size: 14px;
+  color: #3366BB;
+  background-color: FFFFBB;
+  padding: 10px;
+  border: 2px solid #3366BB;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.janDesc{
+  text-align: left;
+}
+
+.imgDesc{
+  width: 150px;
+  height: auto;
+}

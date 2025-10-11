@@ -10,10 +10,10 @@
   
 /*** Elementos do Formulário ***/ 
  
-.listaCompras { 
+#listaCompras { 
     float: right; 
     width: 210px; 
-    height: 160px; 
+    height: 175px; 
     margin-top: 2px; 
     margin-left: 10px; 
 } 

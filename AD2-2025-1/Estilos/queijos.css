@@ -34,7 +34,14 @@
     color: #CC0000; 
 } 
  
-.tabQueijo .imgQueijo { 
-    width: 60px; 
-    height: 44px; 
+.tabQueijo #imgQueijo { 
+    width: 150px;
 }
+
+.tabQueijo .menuTab {
+    height: 45px;
+}
+
+.tabQueijo .descTab {
+    text-align: center;
+}   

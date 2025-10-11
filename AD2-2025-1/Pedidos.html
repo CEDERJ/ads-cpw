@@ -5,6 +5,7 @@
     <title>Pedidos</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/pedidos.css">
+    <script src="canastrao.js"></script>
 </head>
 <body>
     <header>
@@ -78,8 +79,8 @@
                             <option>Queijo Brie (200g)</option>
                         </optgroup> 
                     </select> 
-                <input type="button" value="Comprar" /> 
-                <textarea class="listaCompras" name="listaPedidos" readonly></textarea> 
+                <input type="button" value="Incluir" onclick="addProduto()"/> 
+                <textarea id="listaCompras" name="listaPedidos" readonly></textarea> 
                 <br/><br/> 
                 
                     <fieldset class="fsEsq">
@@ -98,15 +99,18 @@
                         <input type=text name="TxtNumCard" class="inpNCC" id="numCar"/></label>
                         <br/> 
                     
-                    </fieldset> 
-                    
+                    </fieldset>  
+
                     <label class="elemDir" for="TxtTotal"><br/>Valor R$ 
-                    <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpMedio" /></label> 
+                    <input type="text" name="TxtTotal" readonly id="valTot" class="inpMedio" value="0"/></label>
+                    
+                    <label for="cpf" class="elemEsq"><br/>CPF:
+                    <input type="text" name="cpf" id="cpf" class="inpNCC" onchange="verificaCPF(this)"/></label>
                 
                 </fieldset> 
                 
                 <div class="botoes"> 
-                    <input type="submit" value="Enviar" /> 
+                    <input type="button" value="Comprar" /> 
                     <input type="reset"  value="Limpar" /> 
                 </div>
             </form> 
