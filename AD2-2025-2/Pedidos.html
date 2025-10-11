@@ -5,6 +5,7 @@
     <title>Planos</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/pedidos.css">
+    <script src="chique.js"></script>
 </head>
 <body>
     <header>
@@ -58,16 +59,16 @@
                     </fieldset>
 
                     <label for="idTel" class="colPri">Telefone:</label>
-                    <input type="tel" id="idTel" class="inpTelef"/><br/><br/>
+                    <input type="tel" id="idTel" class="inpTelef" onchange="criticaTel(this,8)"/><br/><br/>
                     <label for="idCel" class="colPri">Celular:</label>
-                    <input type="tel" id="idCel" class="inpTelef"/><br/><br/>
+                    <input type="tel" id="idCel" class="inpTelef" onchange="criticaTel(this,9)"/><br/><br/>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Seleção de Produtos e Pagamento</legend>
-                <textarea class="listaCompras"></textarea>
-                <select class="colSelProd">
+                <textarea id="listaCompras"></textarea>
+                <select id="selProdutos" class="colSelProd">
                     <option>-----</option>
                     <optgroup label="Acabamento Stylus">
                         <option>Placa 4x4</option>
@@ -94,7 +95,7 @@
                     </optgroup>
                 </select>
                 <br/><br/>
-                <input class="botao" type="button" value="Comprar">
+                <input class="botao" type="button" value="Comprar" onclick="addProduto()"/>
                 <br/><br/>
                 <fieldset class="fsEsq">
                     <legend>Cartão</legend>
@@ -123,7 +124,7 @@
                 <br/>
                 <div class="elemDir">
                     <label  for="valTot">Valor: R$ </label>
-                    <input type="text" class="inpMedio" id="valTot">
+                    <input type="text" class="inpMedio" id="valTot" value="0">
                 </div>
                 </div>
             </fieldset>

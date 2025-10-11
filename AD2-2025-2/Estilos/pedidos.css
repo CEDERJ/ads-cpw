@@ -9,7 +9,7 @@
   margin: 20px auto 20px auto;
 }
 
-.listaCompras{
+#listaCompras{
   width: 210px;
   height: 150px;
   float: right;

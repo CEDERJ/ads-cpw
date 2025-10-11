@@ -97,7 +97,7 @@ var tabMateriais = [
 * QUESTÃO 3
 * Função chamada para crítica do
 * campo Telefone do formulário Cadastro
-*//*
+*/
 function criticaTel(campo,digito) {
 
 	// String  com o telefone
@@ -136,40 +136,25 @@ function criticaTel(campo,digito) {
   * QUESTÃO 4
   * Calcular valor do plano
   */
-  /*
-  function calcula(){
-    document.getElementById("valTot").value = ""
-    
-    codAt = document.getElementById("selAtiv").selectedIndex
-    codPl = document.getElementById("selPlano").selectedIndex
-    
-    if (codAt == 0){
-        alert("É necessário selecionar uma atividade")
-    }
-    if (codPl == 0){
-        alert("É necessário selecionar um plano")
+  
+  function addProduto(){
+    elemSel = document.getElementById("selProdutos")
+    codProd = elemSel.selectedIndex
+
+    if (codProd == 0){
+        alert("Nenhum produto selecionado.")
+        return
     }
 
-    if (codPl == 1){
-        var valor = tabPlanos[codAt-1][3] * 12
+    if(codProd < 7){
+      valor = parseInt(tabAcabamentos[codProd - 1][3])
     }
     else{
-        if (codPl == 2){
-            var valor = tabPlanos[codAt-1][4] * 6
-        }
-        else{
-            var valor = tabPlanos[codAt-1][5]
-        }
+      valor = parseInt(tabMateriais[codProd - 7][4])
     }
 
+    valorAntigo = parseInt(document.getElementById("valTot").value)
+    document.getElementById("valTot").value = valor + valorAntigo
 
-    
-    var checkMat = document.getElementById("idMat")
-    var matricula = document.getElementById("idNum").value
-    
-    if (!(checkMat.checked) || matricula == ""){
-        valor += 80
-    }
-    document.getElementById("valTot").value = valor
+    document.getElementById("listaCompras").innerHTML += elemSel.options[codProd].textContent + "\n"
   }
-  */
