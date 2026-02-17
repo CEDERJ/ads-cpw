@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Carrapet PataShop</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/pedidos.css">
 </head>
 <body>
     <header>
@@ -23,8 +24,8 @@
         </ul>
     </nav>
     <section>
-        <h3>Compras</h3>
         <form class="divCompras">
+            <h3>Compras</h3>
             <fieldset>
                 <legend>Identificação</legend>
                 <div class="divLinha">
@@ -66,35 +67,23 @@
             <fieldset>
                 <legend>Seleção de Produtos e Pagamento</legend>
                 <textarea class="listaCompras"></textarea>
-                <select class="colSelProd">
-                    <option>-----</option>
-                    <optgroup label="Acabamento Stylus">
-                        <option>Placa 4x4</option>
-                        <option>Tomada</option>
-                        <option>Interruptor</option>
-                    </optgroup>
-                    <optgroup label="Acabamento Slim">
-                        <option>Placa 4x2</option>
-                        <option>Módulo Tomada</option>
-                        <option>Módulo Interruptor</option>
-                    </optgroup>
-                    <optgroup label="Cabo Flexível">
-                        <option>Sil Preto 2,5 mm (100 m)</option>
-                        <option>Cobrecom Azul 2,5 mm (100 m)</option>
-                        <option>Sil Verde 2,5 mm (50 m)</option>
-                    </optgroup>
-                    <optgroup label="Terminais Ilhós">
-                        <option>2,5 mm (200 peças)</option>
-                        <option>4 mm (100 peças)</option>
-                    </optgroup>
-                    <optgroup label="Conduítes">
-                        <option>Plastilit 1/2" 25 m</option>
-                        <option>Plastilit 3/4" 50 m</option>
-                    </optgroup>
-                </select>
-                <br/><br/>
-                <input class="botao" type="button" value="Comprar">
-                <br/><br/>
+                <div class="divSelProd">
+                    <select class="colSelProd">
+                        <option>-----</option>
+                        <optgroup label="Ração Cão">
+                            <option>PEDIGREE Carne 10 kg</option>
+                            <option>Purina Alpo C&F 10 kg</option>
+                        </optgroup>
+                        <optgroup label="Ração Gato">
+                            <option>GranPlus Choice C&F 10 kg</option>
+                        </optgroup>
+                        <optgroup label="Brinquedo Cão">
+                            <option>JAMBO Osso Silicone</option>
+                        </optgroup>
+                    </select>
+                    <input class="botao" type="button" value="+">
+                </div>
+                <br/>
                 <fieldset class="fsEsq">
                     <legend>Cartão</legend>
                     <div>
@@ -109,8 +98,8 @@
                     <br/>
                     <div>
                         <label for="mesVal" class="colLabCrd">Validade:</label>
-                        <input type="number" id="mesVal" class="numDD" min="1" max="12" value="10"/> /
-                        <input type="number" id="anoVal" class="numQD" value="2024" min="2024"/>
+                        <input type="number" id="mesVal" class="numDD" min="1" max="12" value="6"/> /
+                        <input type="number" id="anoVal" class="numQD" value="2024" min="2026"/>
                     </div>
                     <br/>
                     <div>
@@ -121,6 +110,7 @@
                 </fieldset>
                 <br/>
                 <div class="elemDir">
+                    <br/>
                     <label  for="valTot">Valor: R$ </label>
                     <input type="text" class="inpMedio" id="valTot">
                 </div>
@@ -128,7 +118,7 @@
             </fieldset>
             <br/>
             <div class="botoes">
-                <input type="submit" value="Enviar"/>
+                <input type="submit" value="Confirmar"/>
                 <input type="reset" value="Limpar"/>
             </div>
         
