@@ -2,24 +2,26 @@
   text-align: center;
 }
 
-.listaMat{
-  width: 440px;
-  color: #202020;
-  background-color: #EEEEBB;
+.listaCuida{
+  width: 380px;
+  color: #3366BB;
+  background-color: #FFFFBB;
   padding: 10px 10px 10px 30px;
-  border: 3px solid #202020;
-  margin-top: 0px;
+  border: 2px solid #000000;
+  margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  list-style-type: square;
 }
 
-.listaMat ol{
-  color: #202020;
+.listaCuida ul{
+  list-style-type: square
+}
+
+.listaCuida ol{
   list-style-type: lower-alpha;
 }
 
-.preco{
-  color: #CC0000;
+.listaCuida .preco{
+  color: #C00000;
 }
