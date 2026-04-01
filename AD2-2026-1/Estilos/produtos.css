@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.tabProd{
+  border-collapse: collapse;
+  margin-top: 6px;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  color: #114499;
+  font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.tabProd th, .tabProd td{
+  border: 2px solid #000000;
+  padding: 6px 12px 6px 12px;
+}
+
+.tabProd .linTH{
+  color: #FFFFFF;
+  background-color: #0077BB;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tabProd .colTH{
+  color: #FFFFFF;
+  background-color: #22AAEE;
+  text-align: left;
+}
+
+.tabProd .imgPet{
+  width: 40px;
+  height: 40px;
+}
+
+.tabProd .imgProd{
+  width: 90px;
+  height: 90px;
+}
+
+.tabProd .preco{
+  color: #CC0000;
+  font-weight: bold;
+}
