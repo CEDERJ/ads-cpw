@@ -5,6 +5,7 @@
     <title>Carrapet PataShop</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/pedidos.css">
+    <script src="carrapet.js"></script>
 </head>
 <body>
     <header>
@@ -66,7 +67,7 @@
 
             <fieldset>
                 <legend>Seleção de Produtos e Pagamento</legend>
-                <textarea class="listaCompras"></textarea>
+                <textarea class="listaCompras" id="listaC"></textarea>
                 <div class="divSelProd">
                     <select class="colSelProd">
                         <option>-----</option>
@@ -99,9 +100,9 @@
                     <div>
                         <label for="mesVal" class="colLabCrd">Validade:</label>
                         <input type="number" id="mesVal" class="numDD" min="1" max="12" value="6"/> /
-                        <input type="number" id="anoVal" class="numQD" value="2024" min="2026"/>
+                        <input type="number" id="anoVal" class="numQD" value="2026" min="2026"/>
                     </div>
-                    <br/>
+                    <br/><br/>
                     <div>
                         <label for="numCartao" class="colLabCrd">Número:</label>
                         <input type="number" id="numCartao" class="inpNCC"/>
@@ -109,16 +110,20 @@
                     <br/>
                 </fieldset>
                 <br/>
-                <div class="elemDir">
-                    <br/>
-                    <label  for="valTot">Valor: R$ </label>
-                    <input type="text" class="inpMedio" id="valTot">
-                </div>
+                <div class="divLinhaFinal">
+                    <div class="elemEsq">
+                        <label  for="cpf">CPF:</label>
+                        <input type="text" class="inpNCC" id="cpf" onchange="verificaCPF(this)">
+                    </div>
+                    <div class="elemDir">
+                        <label  for="valTot">Valor: R$ </label>
+                        <input type="text" class="inpMedio" id="valTot" value="0">
+                    </div>
                 </div>
             </fieldset>
             <br/>
             <div class="botoes">
-                <input type="submit" value="Confirmar"/>
+                <input type="submit" value="Comprar"/>
                 <input type="reset" value="Limpar"/>
             </div>
         

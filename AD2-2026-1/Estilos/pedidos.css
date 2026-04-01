@@ -12,7 +12,7 @@
 
 .listaCompras{
   width: 210px;
-  height: 160px;
+  height: 190px;
   float: right;
   margin-top: 2px;
   margin-left: 10px;
@@ -39,6 +39,11 @@
   display: block;
 }
 
+.elemEsq{
+  float: left;
+  display: block;
+}
+
 .botoes{
   text-align: right;
   margin-top: 20px 10px 0px 10px;
@@ -46,6 +51,12 @@
 
 .divLinha{
   width: 500px;
+  margin-bottom: 6px;
+}
+
+.divLinhaFinal{
+  width: 500px;
+  padding-top: 150px;
   margin-bottom: 6px;
 }
 

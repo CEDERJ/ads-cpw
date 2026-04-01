@@ -99,44 +99,51 @@ var tabCuidados = [
     }
   }
 
-  /*
+/*
 * QUESTÃO 3
 * Função chamada para crítica do
-* campo Telefone do formulário Cadastro
+* campo CPF do formulário Compras
 */
-/*function criticaTel(campo,digito) {
+function calculaDV(num){
+    var resto = 0, soma = 0;
+    for ( i = 2; i < 11; i++ ){
+        soma = soma + ((num % 10) * i);
+        num = parseInt(num / 10);
+    }
+    resto = (soma % 11);
+    return (resto > 1) ? (11 - resto) : 0;
+}
 
-	// String  com o telefone
-	var tel = campo.value;
-	var tipoTel;
-
-	if(digito == 8){ tipoTel = "fixo"; }
-	if(digito == 9){ tipoTel = "celular"; }
-	
-	//Verificando quantidade de digitos
-    if (tel.length < digito) {
-		alert(`Telefone ${tipoTel} tem de ter ${digito} digitos!`);
-		campo.value = "";
+function verificaCPF(campo){
+    var i, c;
+    var iniCPF;
+    var strCPF = campo.value;
+    if ( strCPF.length != 11 ){
+        alert("CPF tem de ter 11 dígitos!");
+        campo.value = "";
         campo.focus();
         return false;
     }
-	
-	// Verificando se todos os caracteres são digitos
-	if ( isNaN(tel) ) {
-		var i, c;
-		for (i = 0; i < digito; i++ ) {
-			c = tel.charAt(i);
-			if ( (c < '0') || (c > '9')) {
-				alert(`Telefone só pode ter dígitos, caracter '${c}' inválido!`);
-			}	
-		}
-		campo.value = "";
-		campo.focus();
-		return false;
-	}
-	
+    for ( i = 0; i < 11; i++ ){
+        c = strCPF.charAt(i);
+        if ( (c < '0') || (c > '9')){
+            alert('Insira apenas os dígitos, caracter "' + c + '" inválido!');
+            campo.value = "";
+            campo.focus();
+            return false;
+        }
+    }
+    iniCPF = strCPF.substring(0, 9);
+    pd = calculaDV(iniCPF);
+    sd = calculaDV(iniCPF * 10 + pd);
+    if ( (pd != strCPF.charAt(9)) || (sd != strCPF.charAt(10)) ){
+        alert("Dígitos verificadores inválidos!");
+        campo.value = "";
+        campo.focus();
+        return false;
+    }
     return true;
-}*/
+}
   
   /*
   * QUESTÃO 4
