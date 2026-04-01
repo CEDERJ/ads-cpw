@@ -41,3 +41,25 @@
   color: #CC0000;
   font-weight: bold;
 }
+
+.tabProd .produto{
+  text-align: center;
+  margin: 0px;
+}
+
+.tabProd figcaption{
+  font-weight: bold;
+}
+
+.tabProd a, .tabProd a:visited{
+  color: #2255AA;
+}
+
+.tabProd .desc{
+  width: 200px;
+  text-align: center;
+}
+
+.tabProd #PesPrcDes{
+  font-weight: bold;
+}

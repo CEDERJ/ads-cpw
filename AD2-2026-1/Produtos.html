@@ -5,6 +5,7 @@
     <title>Carrapet PataShop</title>
     <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="stylesheet" href="Estilos/produtos.css">
+    <script src="carrapet.js"></script>
 </head>
 <body>
     <header>
@@ -26,41 +27,53 @@
     <section>
         <table class="tabProd">
             <thead>
-                <tr><th colspan="5" class="linTH">Produtos para seu Pet</th></tr>
+                <tr><th colspan="3" class="linTH">Produtos para seu Pet</th></tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="linTH">Tipo</td>
-                    <td class="linTH">Pet</td>
+                    <td class="linTH">Produto</td>
                     <td class="linTH">Descrição</td>
-                    <td class="linTH">Imagem</td>
-                    <td class="linTH">Preço</td>
                 </tr>
                 <tr>
                     <th rowspan="3" class="colTH">Ração</th>
-                    <td><img src="Imagens/Cao40.png" class="imgPet"></td>
-                    <td>PEDIGREE Carne 10 kg</td>
-                    <td><img src="Imagens/RaçãoPedigree90.jpg" class="imgProd"></td>
-                    <td><span class="preco">R$ 100,00</span></td>
+                    <td class="produto" onclick="mostra(0)">
+                        <figure class="produto">
+                            <img src="Imagens/Cao40.png" class="imgPet">
+                            <figcaption>Carne</figcaption>
+                        </figure>
+                    </td>
+                    <td rowspan="4" class="desc">
+                        <h4 id="NomeDes"></h4>
+                        <img src="Imagens/vazio_150.png" class="imgProd" id="ImgDes">
+                        <div id="PesPrcDes">
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td><img src="Imagens/Cao40.png" class="imgPet"></td>
-                    <td>Purina Alpo Carne e Frango 10 kg</td>
-                    <td><img src="Imagens/RaçãoAlpo90.jpg" class="imgProd"></td>
-                    <td><span class="preco">R$ 130,00</span></td>
+                    <td>
+                        <figure class="produto" onclick="mostra(1)">
+                            <img src="Imagens/Cao40.png" class="imgPet">
+                            <figcaption>Carne e Frango</figcaption>
+                        </figure>
+                    </td>
                 </tr>
                 <tr>
-                    <td><img src="Imagens/Gato40.png" class="imgPet"></td>
-                    <td>GranPlus Choice Frango e Carne 10 kg</td>
-                    <td><img src="Imagens/RaçãoGranPlus90.jpg" class="imgProd"></td>
-                    <td><span class="preco">R$ 130,00</span></td>
+                    <td>
+                        <figure class="produto" onclick="mostra(2)">
+                            <img src="Imagens/Gato40.png" class="imgPet">
+                            <figcaption>Carne e Frango</figcaption>
+                        </figure>
+                    </td>
                 </tr>
                 <tr>
                     <th class="colTH">Brinquedo</th>
-                    <td><img src="Imagens/Cao40.png" class="imgPet"></td>
-                    <td>JAMBO PET Osso Silicone sabor Frango</td>
-                    <td><img src="Imagens/BrinquedoJambo90.jpg" class="imgProd"></td>
-                    <td><span class="preco">R$ 25,00</span></td>
+                    <td>
+                        <figure class="produto" onclick="mostra(3)">
+                            <img src="Imagens/Cao40.png" class="imgPet">
+                            <figcaption>Osso Silicone</figcaption>
+                        </figure>
+                    </td>
                 </tr>
             </tbody>
         </table>

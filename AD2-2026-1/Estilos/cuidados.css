@@ -25,3 +25,24 @@
 .listaCuida .preco{
   color: #C00000;
 }
+
+.janCuida{
+  text-align: center;
+  font-size: 14px;
+  color: #3366BB;
+  background-color: #FFFFBB;
+  padding: 10px;
+  border: 2px solid #3366BB;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listaCuida a, .listaCuida a:visited{
+  color: #2255AA;
+}
+
+.janCuida .preco{
+  color: #C00000;
+}
