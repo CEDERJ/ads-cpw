@@ -150,7 +150,7 @@ function verificaCPF(campo){
   * Adicionar produtos na lista de compras
   */
   
-  /*function addProduto(){
+  function addProduto(){
     elemSel = document.getElementById("selProdutos")
     codProd = elemSel.selectedIndex
 
@@ -159,15 +159,9 @@ function verificaCPF(campo){
         return
     }
 
-    if(codProd < 7){
-      valor = parseInt(tabAcabamentos[codProd - 1][3])
-    }
-    else{
-      valor = parseInt(tabMateriais[codProd - 7][4])
-    }
-
+    valor = parseInt(tabProdutos[codProd - 1][3])
     valorAntigo = parseInt(document.getElementById("valTot").value)
     document.getElementById("valTot").value = valor + valorAntigo
 
     document.getElementById("listaCompras").innerHTML += elemSel.options[codProd].textContent + "\n"
-  }*/
+  }

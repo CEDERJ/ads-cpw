@@ -10,7 +10,7 @@
   border: 2px solid #000000;
 }
 
-.listaCompras{
+#listaCompras{
   width: 210px;
   height: 190px;
   float: right;

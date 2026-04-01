@@ -67,9 +67,9 @@
 
             <fieldset>
                 <legend>Seleção de Produtos e Pagamento</legend>
-                <textarea class="listaCompras" id="listaC"></textarea>
+                <textarea id="listaCompras"></textarea>
                 <div class="divSelProd">
-                    <select class="colSelProd">
+                    <select class="colSelProd" id="selProdutos">
                         <option>-----</option>
                         <optgroup label="Ração Cão">
                             <option>PEDIGREE Carne 10 kg</option>
@@ -82,7 +82,7 @@
                             <option>JAMBO Osso Silicone</option>
                         </optgroup>
                     </select>
-                    <input class="botao" type="button" value="+">
+                    <input class="botao" type="button" value="+" onclick="addProduto()">
                 </div>
                 <br/>
                 <fieldset class="fsEsq">
